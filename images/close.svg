@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.479 71.379">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="cross" transform="translate(-1794.372 -54.965)">
+    <line id="Line_4" data-name="Line 4" class="cls-1" y1="1.828" x2="77.347" transform="matrix(0.695, 0.719, -0.719, 0.695, 1803.594, 62.2)"/>
+    <line id="Line_6" data-name="Line 6" class="cls-1" y1="78.057" x2="0.217" transform="matrix(0.695, 0.719, -0.719, 0.695, 1857.611, 63.52)"/>
+  </g>
+</svg>
