@@ -5,7 +5,7 @@
 
 h1 {
     font-family: 'h1Font';
-    font-weight: initial;
+    font-weight: 100;
     text-align: center;
     color: #F5F5F5;
     font-size: 3em;
@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     font-family: 'h1Font';
-    font-weight: lighter;
+    font-weight: 100;
     color: #FFEAB1;
     font-size: 2em;
     margin: 0em;
@@ -36,7 +36,24 @@ body {
     width: 2em;
     height: 2em;
     margin-top: 0.5em;
-    margin-left: 1em ;
+    margin-left: 1em;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.85);
+	}
+
+	70% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(0.85);
+	}
 }
 
 .subTitle {
