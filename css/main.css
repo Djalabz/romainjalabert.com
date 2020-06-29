@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'h2Font';
-  src: url(/assets/Sunrise.otf);
+  src: url(/assets/RockSalt-Regular.ttf);
 }
 
 body {
@@ -17,13 +17,13 @@ body {
 }
 
 header h1 {
-  font-family: 'h1Font';
-  font-weight: 100;
+  font-family: 'h2Font';
+  font-weight: 0;
   text-align: center;
   color: #F5F5F5;
-  font-size: 4em;
+  font-size: 2.2em;
   border: 0;
-  padding-top: 1em;
+  padding-top: 1.5em;
   margin-bottom: 0.3em;
   font-style: normal;
   font-variant: normal;
@@ -40,13 +40,15 @@ header .subTitle {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.5em;
+  margin-top: 1.5em;
 }
 
 header .subTitle h2 {
   font-family: 'h2Font';
   font-weight: 100;
+  font-style: normal;
   color: #FFEAB1;
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 0em;
 }
 
@@ -54,7 +56,7 @@ header .subTitle .menuSend {
   width: 2em;
   height: 2em;
   margin-top: 0em;
-  margin-left: 1em;
+  margin-left: 0.3em;
   padding-left: 1em;
   cursor: pointer;
 }
@@ -111,16 +113,10 @@ nav {
   display: none;
 }
 
-nav .closeButton {
-  width: 20px;
-  float: right;
-  cursor: pointer;
-  margin: 14px;
-}
-
 nav ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
+  padding: 0 1em 0 1em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
@@ -129,17 +125,66 @@ nav ul {
 }
 
 nav li {
+  font-family: 'h2Font';
   opacity: 0;
+  -webkit-animation: show-x;
+          animation: show-x;
+  text-align: center;
+  padding: 0 1em 0 1em;
+  line-height: 1.5;
 }
 
 nav a {
+  font-size: 1.8em;
   color: white;
+  text-decoration: none;
+}
+
+nav span {
+  color: lightgray;
+  display: block;
+  margin-top: 2em;
+  font-family: 'h1Font';
+  font-size: 1.7em;
+}
+
+.closeButton {
+  width: 20px;
+  float: right;
+  cursor: pointer;
+  margin: 14px;
+  opacity: 0;
 }
 
 .show-menu {
   display: block;
   -webkit-animation: slide-menu 0.5s ease-in forwards;
           animation: slide-menu 0.5s ease-in forwards;
+}
+
+.show-menu .closeButton {
+  -webkit-animation: show-x 0.8s 0.6s forwards;
+          animation: show-x 0.8s 0.6s forwards;
+}
+
+.show-menu li:nth-of-type(1) {
+  -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
+          animation: menu-item-anim .6s forwards 1s ease-in-out;
+}
+
+.show-menu li:nth-of-type(2) {
+  -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+}
+
+.show-menu li:nth-of-type(3) {
+  -webkit-animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+}
+
+.show-menu li:nth-of-type(4) {
+  -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.6s ease-in-out;
 }
 
 @-webkit-keyframes slide-menu {
@@ -161,6 +206,50 @@ nav a {
   to {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menu-item-anim {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-item-anim {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
