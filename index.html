@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -11,11 +12,49 @@
 
 <body>
 
+    <nav id='overlay'>
+        <img src="/images/close.svg" alt="Close" class='closeButton' id='closeMenu'>
+        <ul>
+                <li>
+                    <a href="">Work</a>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
+                    <a href="">Who's that ?</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+
     <h1>Romain Jalabert</h1>
         <div class="subTitle">
-            <h2>Web Developper Freelance</h2>
-            <img src="images/menuSend.svg" alt="see more !" class="menuSend " id="menuSend">
+            <h2 class="WebDevTitle">Web Developper Freelance</h2>
+            <img src="images/menuSend.svg" alt="see more !" class="menuSend" id="menuSend">
         </div>
+        
+    </header>
+    
+    <script>
+
+            var overlay = document.getElementById('overlay');
+            var closeMenu = document.getElementById('closeMenu');
+
+            document.getElementById('menuSend').addEventListener('click', function() {
+                overlay.classList.add('show-menu');
+            });
+
+            document.getElementById('closeMenu').addEventListener('click', function() {
+                overlay.classList.remove('show-menu');
+            });
+
+    </script>
+
     
 </body>
 

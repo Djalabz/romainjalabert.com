@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'h1Font';
+    src: url(/assets/Brazilian.ttf);
+  }
+
+  @font-face {
+    font-family: 'h2Font';
+    src: url(/assets/Sunrise.otf);
+  }
+
+body {
+    background-color: #1D2EC3;
+    font-weight: normal;
+    background-image: url('/images/SecondStars.png'), url('/images/PortfolioBack4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    
+h1 {
+    font-family: 'h1Font';
+    font-weight: 100;
+    text-align: center;
+    color: #F5F5F5;
+    font-size: 4em;
+    border: 0;
+    padding-top: 1em;
+    margin-bottom: 0.3em;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+
+    h2 {
+        font-family: 'h2Font';
+        font-weight: 100;
+        color: #FFEAB1;
+        font-size: 2em;
+        margin: 0em;
+    }
+
+    .menuSend {
+        width: 2em;
+        height: 2em;
+        margin-top: 0em;
+        margin-left: 1em;
+        padding-left: 1em;
+        cursor: pointer;
+    }
+
+    .menuSend:hover {
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.85);
+        }
+    
+        70% {
+            transform: scale(1.1);
+        }
+    
+        100% {
+            transform: scale(0.85);
+        }
+    }
+}
+}
+
+
+nav {
+    width: calc(100% - 4em);
+    height: calc(100vh - 4em);
+    padding: 2em;
+    position: absolute;
+    background: #151553;
+    transform: scaleX(0);
+    transform-origin: right;
+    display: none;
+
+
+.closeButton {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+    margin: 14px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10% auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 80%;
+}
+
+li {
+    opacity: 0;
+}
+
+a {
+    color: white;
+    }
+}
+
+
+.show-menu {
+    display: block;
+    animation: slide-menu 0.5s ease-in forwards;
+}
+
+@keyframes slide-menu {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+
+    }
+}
