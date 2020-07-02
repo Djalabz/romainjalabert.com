@@ -11,9 +11,7 @@
 body {
   background-color: #1D2EC3;
   font-weight: normal;
-  background-image: url("/images/SecondStars.png"), url("/images/PortfolioBack4.png");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 header h1 {
@@ -250,6 +248,128 @@ nav span {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-image: url("/images/PortfolioBack4_nolights.png");
+}
+
+.back_no_light {
+  background-image: url("../images/PortfolioBack4_nolights.png");
+}
+
+.stars {
+  background-image: url("../images/SecondStars.png");
+  -webkit-animation: waving-stars  5s ease-in-out infinite;
+          animation: waving-stars  5s ease-in-out infinite;
+}
+
+.light_1 {
+  background-image: url("../images/2YellowLights.png");
+  -webkit-animation: waving-light  4s ease-in-out infinite;
+          animation: waving-light  4s ease-in-out infinite;
+}
+
+.light_2 {
+  background-image: url("../images/YellowLight+.png");
+}
+
+.light_3 {
+  background-image: url("../images/redLight.png");
+  -webkit-animation: waving-redlight  4s ease-in-out infinite;
+          animation: waving-redlight  4s ease-in-out infinite;
+}
+
+@-webkit-keyframes waving-redlight {
+  0% {
+    opacity: 0.6;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes waving-redlight {
+  0% {
+    opacity: 0.6;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@-webkit-keyframes waving-light {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes waving-light {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes waving-stars {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes waving-stars {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1.2;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

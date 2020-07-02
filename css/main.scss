@@ -11,9 +11,9 @@
 body {
     background-color: #1D2EC3;
     font-weight: normal;
-    background-image: url('/images/SecondStars.png'), url('/images/PortfolioBack4.png');
+    // background-image: url('/images/SecondStars.png'), url('/images/PortfolioBack4.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
 }
 
 header {
@@ -95,7 +95,6 @@ ul {
     padding: 0 1em 0 1em;
     display: grid;
     grid-template-columns: repeat(4, 25%);
-
     width: 80%;
 }
 
@@ -120,8 +119,7 @@ span {
     margin-top: 2em;
     font-family: 'h1Font';
     font-size: 1.7em;
-}
-
+    }
 }
 
 .closeButton {
@@ -186,5 +184,90 @@ span {
     to {
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+.background {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-image: url('/images/PortfolioBack4_nolights.png');
+}
+
+    .back_no_light {
+    background-image: url("../images/PortfolioBack4_nolights.png");
+    }
+
+    .stars{
+    background-image:  url("../images/SecondStars.png");
+    animation: waving-stars  5s ease-in-out infinite;
+    }
+
+    .light_1{
+    background-image: url("../images/2YellowLights.png");
+    animation: waving-light  4s ease-in-out infinite;
+    }
+    .light_2{
+    background-image: url("../images/YellowLight+.png");
+    }
+    .light_3{
+    background-image: url("../images/redLight.png");
+    animation: waving-redlight  4s ease-in-out infinite;
+    }
+
+
+@keyframes waving-redlight {
+    0% {
+        opacity : 0.6;
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+
+}
+
+@keyframes waving-light {
+    0% {
+        opacity : 0;
+    }
+
+    60% {
+        opacity: 1.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes waving-stars {
+    0% {
+        opacity : 0;
+    }
+
+    60% {
+        opacity: 1.2;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
