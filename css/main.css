@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'h1Font';
-  src: url(/assets/Brazilian.ttf);
+  src: url(/assets/CaveatBrush-Regular.ttf);
 }
 
 @font-face {
   font-family: 'h2Font';
-  src: url(/assets/Abel-Regular.ttf);
+  src: url(/assets/CaveatBrush-Regular.ttf);
 }
 
 body {
@@ -17,19 +17,26 @@ body {
 header {
   position: relative;
   text-align: center;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 header h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'h1Font';
   font-weight: 0;
   text-align: center;
   color: #F5F5F5;
-  font-size: 2.2em;
+  font-size: 2.7em;
   border: 0;
   padding-top: 1.5em;
   margin-bottom: 0.3em;
   font-style: normal;
   font-variant: normal;
+  cursor: pointer;
 }
 
 header .subTitle {
@@ -43,15 +50,17 @@ header .subTitle {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.5em;
-  margin-top: 1.5em;
+  margin-top: 1em;
+  cursor: pointer;
 }
 
 header .subTitle h2 {
   font-family: 'h2Font';
   font-weight: 100;
   font-style: normal;
+  text-transform: uppercase;
   color: #FFEAB1;
-  font-size: 1.6em;
+  font-size: 1.9em;
   margin: 0em;
 }
 
@@ -75,31 +84,31 @@ header .subTitle .menuSend:hover {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
   }
   100% {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
   }
   100% {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -285,14 +294,14 @@ nav span {
 
 .light_1 {
   background-image: url("../images/2YellowLights.png");
-  -webkit-animation: waving-light 40s infinite;
-          animation: waving-light 40s infinite;
+  -webkit-animation: waving-light 41s infinite;
+          animation: waving-light 41s infinite;
 }
 
 .light_2 {
   background-image: url("../images/YellowLight+.png");
-  -webkit-animation: waving-light 30s infinite;
-          animation: waving-light 30s infinite;
+  -webkit-animation: waving-light 32s infinite;
+          animation: waving-light 32s infinite;
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }
@@ -317,12 +326,16 @@ nav span {
 
 .downLeftLight {
   background-image: url("../images/downLeftLight.png");
-  -webkit-animation: waving-orangelight 50s infinite;
-          animation: waving-orangelight 50s infinite;
+  -webkit-animation: waving-orangelight 47s infinite;
+          animation: waving-orangelight 47s infinite;
 }
 
 .smallOrangeLight {
   background-image: url("../images/smallOrangeLight.png");
+  -webkit-animation: waving-orangelight 47s infinite;
+          animation: waving-orangelight 47s infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 @-webkit-keyframes waving-redlight {
@@ -407,10 +420,10 @@ nav span {
   0% {
     opacity: 1;
   }
-  21% {
+  29% {
     opacity: 1;
   }
-  22% {
+  30% {
     opacity: 0;
   }
   65% {
@@ -428,10 +441,10 @@ nav span {
   0% {
     opacity: 1;
   }
-  21% {
+  29% {
     opacity: 1;
   }
-  22% {
+  30% {
     opacity: 0;
   }
   65% {
@@ -477,7 +490,7 @@ nav span {
 
 @-webkit-keyframes waving-deep {
   0% {
-    opacity: 0.7;
+    opacity: 0.95;
   }
   35% {
     opacity: 1;
@@ -486,13 +499,13 @@ nav span {
     opacity: 1;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.95;
   }
 }
 
 @keyframes waving-deep {
   0% {
-    opacity: 0.7;
+    opacity: 0.95;
   }
   35% {
     opacity: 1;
@@ -501,7 +514,7 @@ nav span {
     opacity: 1;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.95;
   }
 }
 

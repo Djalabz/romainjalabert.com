@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'h1Font';
-    src: url(/assets/Brazilian.ttf);
+    src: url(/assets/CaveatBrush-Regular.ttf);
   }
 
   @font-face {
     font-family: 'h2Font';
-    src: url(/assets/Abel-Regular.ttf);
+    src: url(/assets/CaveatBrush-Regular.ttf);
   }
 
 body {
@@ -19,18 +19,22 @@ body {
 header {
     position: relative;
     text-align: center;
+    animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
     
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'h1Font';
     font-weight: 0;
     text-align: center;
     color: #F5F5F5;
-    font-size: 2.2em;
+    font-size: 2.7em;
     border: 0;
     padding-top: 1.5em;
     margin-bottom: 0.3em;
     font-style: normal;
     font-variant: normal;
+    cursor: pointer;
 }
 
 .subTitle {
@@ -38,14 +42,16 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 1em;
+    cursor: pointer;
 
     h2 {
         font-family: 'h2Font';
         font-weight: 100;
         font-style: normal;
+        text-transform: uppercase;;
         color: #FFEAB1;
-        font-size: 1.6em;
+        font-size: 1.9em;
         margin: 0em;
     }
 
@@ -66,15 +72,15 @@ h1 {
 
     @keyframes pulse {
         0% {
-            transform: scale(0.85);
+            transform: scale(1);
         }
     
         70% {
-            transform: scale(1.1);
+            transform: scale(1.04);
         }
     
         100% {
-            transform: scale(0.85);
+            transform: scale(1);
         }
     }
 }
@@ -125,6 +131,7 @@ span {
     font-size: 1.7em;
     }
 }
+
 
 .closeButton {
     width: 20px;
@@ -222,12 +229,12 @@ span {
 
 .light_1 {
     background-image: url("../images/2YellowLights.png");
-    animation: waving-light 40s infinite;
+    animation: waving-light 41s infinite;
     }
 
 .light_2 {
     background-image: url("../images/YellowLight+.png");
-    animation: waving-light 30s infinite;
+    animation: waving-light 32s infinite;
     animation-delay: 15s;
     }
 
@@ -248,11 +255,13 @@ span {
 
 .downLeftLight {
     background-image: url('../images/downLeftLight.png');
-    animation: waving-orangelight 50s infinite;
+    animation: waving-orangelight 47s infinite;
 }
 
 .smallOrangeLight {
     background-image: url('../images/smallOrangeLight.png');
+    animation: waving-orangelight 47s infinite;
+    animation-delay: 4s;;
 }
 
 
@@ -311,11 +320,11 @@ span {
         opacity : 1;
     }
 
-    21% {
+    29% {
         opacity: 1;
     }
 
-    22% {
+    30% {
         opacity : 0;
     }
 
@@ -352,7 +361,7 @@ span {
 
 @keyframes waving-deep {
     0% {
-        opacity : 0.7;
+        opacity : 0.95;
     }
 
     35% {
@@ -364,7 +373,7 @@ span {
     }
 
     100% {
-        opacity: 0.7;
+        opacity: 0.95;
     }
 }
 

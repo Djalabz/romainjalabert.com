@@ -3,7 +3,7 @@
 var overlay = document.getElementById('overlay');
 var closeMenu = document.getElementById('closeMenu');
 
-document.getElementById('menuSend').addEventListener('click', function() {
+document.getElementById('header').addEventListener('click', function() {
     overlay.classList.add('show-menu');
 });
 
