@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'h2Font';
-  src: url(/assets/RockSalt-Regular.ttf);
+  src: url(/assets/Abel-Regular.ttf);
 }
 
 body {
@@ -14,8 +14,13 @@ body {
   background-size: cover;
 }
 
+header {
+  position: relative;
+  text-align: center;
+}
+
 header h1 {
-  font-family: 'h2Font';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 0;
   text-align: center;
   color: #F5F5F5;
@@ -64,8 +69,8 @@ header .subTitle .menuSend:hover {
           animation-name: pulse;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -260,33 +265,54 @@ nav span {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
-  background-image: url("/images/PortfolioBack4_nolights.png");
 }
 
 .back_no_light {
   background-image: url("../images/PortfolioBack4_nolights.png");
 }
 
+.deepSky {
+  background-image: url("../images/deepSky.png");
+  -webkit-animation: waving-stars  2s ease-in-out infinite;
+          animation: waving-stars  2s ease-in-out infinite;
+}
+
 .stars {
   background-image: url("../images/SecondStars.png");
-  -webkit-animation: waving-stars  5s ease-in-out infinite;
-          animation: waving-stars  5s ease-in-out infinite;
+  -webkit-animation: waving-stars  6s ease-in-out infinite;
+          animation: waving-stars  6s ease-in-out infinite;
 }
 
 .light_1 {
   background-image: url("../images/2YellowLights.png");
-  -webkit-animation: waving-light  4s ease-in-out infinite;
-          animation: waving-light  4s ease-in-out infinite;
+  -webkit-animation: waving-light 40s infinite;
+          animation: waving-light 40s infinite;
 }
 
 .light_2 {
   background-image: url("../images/YellowLight+.png");
+  -webkit-animation: waving-light 30s infinite;
+          animation: waving-light 30s infinite;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 
 .light_3 {
   background-image: url("../images/redLight.png");
   -webkit-animation: waving-redlight  4s ease-in-out infinite;
           animation: waving-redlight  4s ease-in-out infinite;
+}
+
+.reverb {
+  background-image: url("../images/reverberes.png");
+  -webkit-animation: waving-reverb  1s ease-in-out infinite;
+          animation: waving-reverb  1s ease-in-out infinite;
+}
+
+.orangeLight {
+  background-image: url("../images/orangeLight.png");
+  -webkit-animation: waving-orangeLight  55s infinite;
+          animation: waving-orangeLight  55s infinite;
 }
 
 @-webkit-keyframes waving-redlight {
@@ -296,11 +322,11 @@ nav span {
   20% {
     opacity: 0.7;
   }
-  50% {
+  40% {
     opacity: 1;
   }
-  85% {
-    opacity: 0.7;
+  65% {
+    opacity: 1;
   }
   100% {
     opacity: 0.6;
@@ -314,62 +340,182 @@ nav span {
   20% {
     opacity: 0.7;
   }
-  50% {
+  40% {
     opacity: 1;
   }
-  85% {
-    opacity: 0.7;
+  65% {
+    opacity: 1;
   }
   100% {
     opacity: 0.6;
   }
 }
 
-@-webkit-keyframes waving-light {
+@-webkit-keyframes waving-orangelight {
   0% {
     opacity: 0;
   }
-  60% {
-    opacity: 1.2;
+  42% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  82% {
+    opacity: 1;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes waving-orangelight {
+  0% {
     opacity: 0;
+  }
+  42% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  82% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes waving-light {
+  0% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes waving-light {
   0% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  22% {
     opacity: 0;
   }
-  60% {
-    opacity: 1.2;
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes waving-stars {
   0% {
-    opacity: 0;
+    opacity: 0.3;
   }
-  60% {
-    opacity: 1.2;
+  45% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.3;
   }
 }
 
 @keyframes waving-stars {
   0% {
-    opacity: 0;
+    opacity: 0.3;
   }
-  60% {
-    opacity: 1.2;
+  45% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.3;
+  }
+}
+
+@-webkit-keyframes waving-deep {
+  0% {
+    opacity: 0.7;
+  }
+  35% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes waving-deep {
+  0% {
+    opacity: 0.7;
+  }
+  35% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes waving-reverb {
+  0% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes waving-reverb {
+  0% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
 /*# sourceMappingURL=main.css.map */
