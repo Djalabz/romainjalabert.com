@@ -26,9 +26,12 @@
     </div>
     <div class="background orangeLight">
     </div>
+    <div class="background downLeftLight">
+    </div>
+    <div class="background smallOrangeLight">
+    </div>
     <div class="background reverb">
     </div>
-
 
     <nav id='overlay'>
         <img src="/images/close.svg" alt="Close" class='closeButton' id='closeMenu'>
@@ -62,34 +65,8 @@
         
     </header>
 
-  
-    
-    <script>
 
-            var overlay = document.getElementById('overlay');
-            var closeMenu = document.getElementById('closeMenu');
-
-            document.getElementById('menuSend').addEventListener('click', function() {
-                overlay.classList.add('show-menu');
-            });
-
-            document.getElementById('closeMenu').addEventListener('click', function() {
-                overlay.classList.remove('show-menu');
-            });
-
-    </script>
-
-<div class="wrap">
-	<div class="base">
-		<div class="flowerpot"></div>
-		<div class="blade blade-center"></div>
-		<div class="blade blade-left-s"></div>
-		<div class="blade blade-right-s"></div>
-		<div class="blade blade-left-l"></div>
-		<div class="blade blade-right-l"></div>
-	</div>
-</div>
-
+<script src="/js/overlay.js"></script>
 
     
 </body>
