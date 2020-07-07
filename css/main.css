@@ -70,7 +70,6 @@ header .subTitle .menuSend {
   margin-top: 0em;
   margin-left: 0.3em;
   padding-left: 1em;
-  cursor: pointer;
 }
 
 header .subTitle .menuSend:hover {
@@ -172,6 +171,10 @@ nav span {
   display: block;
   -webkit-animation: slide-menu 0.5s ease-in forwards;
           animation: slide-menu 0.5s ease-in forwards;
+}
+
+.show-menu .header {
+  display: none;
 }
 
 .show-menu .closeButton {
@@ -278,6 +281,10 @@ nav span {
 
 .back_no_light {
   background-image: url("../images/PortfolioBack4_nolights.png");
+}
+
+.backMask {
+  background-image: url("../images/backMask.png");
 }
 
 .deepSky {
