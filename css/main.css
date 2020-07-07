@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'h1Font';
-  src: url(/assets/CaveatBrush-Regular.ttf);
+  src: url(/assets/AnnieUseYourTelescope-Regular.ttf);
 }
 
 @font-face {
@@ -55,7 +55,7 @@ header .subTitle {
 }
 
 header .subTitle h2 {
-  font-family: 'h2Font';
+  font-family: 'h1Font';
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
@@ -70,15 +70,6 @@ header .subTitle .menuSend {
   margin-top: 0em;
   margin-left: 0.3em;
   padding-left: 1em;
-}
-
-header .subTitle .menuSend:hover {
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -281,6 +272,10 @@ nav span {
 
 .back_no_light {
   background-image: url("../images/PortfolioBack4_nolights.png");
+}
+
+.clouds {
+  background-image: url("../images/Clouds.png");
 }
 
 .backMask {
