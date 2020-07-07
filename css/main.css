@@ -201,7 +201,7 @@ a:hover {
 }
 
 span {
-  color: gray;
+  color: lightgray;
   display: block;
   margin-top: 2em;
   font-family: 'h1Font';
@@ -332,8 +332,8 @@ span {
   background-image: url("../images/Clouds.png");
   -webkit-animation: slideClouds;
           animation: slideClouds;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -406,10 +406,15 @@ span {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  50% {
+  30% {
     right: 5%;
     -webkit-transform: translateX(-5%);
             transform: translateX(-5%);
+  }
+  75% {
+    left: 1%;
+    -webkit-transform: translateX(1%);
+            transform: translateX(1%);
   }
   100% {
     right: 0;
@@ -424,10 +429,15 @@ span {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  50% {
+  30% {
     right: 5%;
     -webkit-transform: translateX(-5%);
             transform: translateX(-5%);
+  }
+  75% {
+    left: 1%;
+    -webkit-transform: translateX(1%);
+            transform: translateX(1%);
   }
   100% {
     right: 0;

@@ -154,7 +154,7 @@ a:hover {
 }
 
 span {
-    color: gray;
+    color: lightgray;
     display: block;
     margin-top: 2em;
     font-family: 'h1Font';
@@ -250,7 +250,7 @@ span {
 .clouds {
     background-image: url("../images/Clouds.png");
     animation: slideClouds;
-    animation-duration: 50s;
+    animation-duration: 45s;
     animation-iteration-count: infinite;
     }
 
@@ -310,14 +310,18 @@ span {
         right: 0;
         transform: translateX(0);
       }
-      50% {
+    30% {
         right: 5%;
         transform: translateX(-5%);
       }
-      100% {
+    75% {
+        left: 1%;
+        transform: translateX(1%);
+    }
+    100% {
         right: 0;
         transform: translateX(0);
-      } 
+    } 
 }
 
 
