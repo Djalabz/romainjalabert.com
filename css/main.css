@@ -14,18 +14,12 @@ body {
   background-size: cover;
 }
 
-header {
+.header {
   position: relative;
   text-align: center;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
-header h1 {
+.header h1 {
   font-family: 'h1Font';
   font-weight: 0;
   text-align: center;
@@ -37,9 +31,15 @@ header h1 {
   font-style: normal;
   font-variant: normal;
   cursor: pointer;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-header .subTitle {
+.header .subTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,10 +51,9 @@ header .subTitle {
           align-items: center;
   margin: 0.5em;
   margin-top: 1em;
-  cursor: pointer;
 }
 
-header .subTitle h2 {
+.header .subTitle h2 {
   font-family: 'h1Font';
   font-weight: 100;
   font-style: normal;
@@ -62,14 +61,29 @@ header .subTitle h2 {
   color: #FFEAB1;
   font-size: 1.9em;
   margin: 0em;
+  cursor: pointer;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-header .subTitle .menuSend {
-  width: 2em;
-  height: 2em;
+.header .subTitle .menuSend {
+  display: none;
+  width: 1.8em;
+  height: 1.8em;
   margin-top: 0em;
   margin-left: 0.3em;
   padding-left: 1em;
+  cursor: pointer;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -100,6 +114,10 @@ header .subTitle .menuSend {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.hide-header {
+  display: none;
 }
 
 nav {
@@ -162,10 +180,6 @@ nav span {
   display: block;
   -webkit-animation: slide-menu 0.5s ease-in forwards;
           animation: slide-menu 0.5s ease-in forwards;
-}
-
-.show-menu .header {
-  display: none;
 }
 
 .show-menu .closeButton {
