@@ -31,7 +31,6 @@ h1 {
     margin-bottom: 0.3em;
     font-style: normal;
     font-variant: normal;
-    cursor: pointer;
     animation-name: pulse;
         animation-duration: 1s;
         animation-iteration-count: infinite;
@@ -74,15 +73,15 @@ h1 {
 
     @keyframes pulse {
         0% {
-            transform: scale(1);
+            transform: scale(0.96);
         }
     
         70% {
-            transform: scale(1.04);
+            transform: scale(1.00);
         }
     
         100% {
-            transform: scale(1);
+            transform: scale(0.96);
         }
     }
 }
@@ -106,7 +105,7 @@ nav {
     height: calc(100vh - 4em);
     padding: 2em;
     position: absolute;
-    background: #151553;
+    background-image: url('../images/backOverlay.png');
     transform: scaleX(0);
     transform-origin: right;
     display: none;
@@ -145,11 +144,11 @@ a:hover {
 
 @keyframes pulse2 {
     0% {
-        transform: scale(1);
+        transform: scale(0.9);
     }
 
     100% {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 }
 
@@ -250,7 +249,7 @@ span {
 .clouds {
     background-image: url("../images/Clouds.png");
     animation: slideClouds;
-    animation-duration: 45s;
+    animation-duration: 43s;
     animation-iteration-count: infinite;
     }
 
@@ -310,7 +309,7 @@ span {
         right: 0;
         transform: translateX(0);
       }
-    30% {
+    33% {
         right: 5%;
         transform: translateX(-5%);
       }
