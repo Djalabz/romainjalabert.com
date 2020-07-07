@@ -117,7 +117,14 @@ body {
 }
 
 .hide-header {
-  display: none;
+  -webkit-animation: backOutLeft;
+          animation: backOutLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 nav {
@@ -145,7 +152,7 @@ nav ul {
 }
 
 nav li {
-  font-family: 'h2Font';
+  font-family: 'h1Font';
   opacity: 0;
   -webkit-animation: show-x;
           animation: show-x;

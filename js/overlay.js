@@ -11,5 +11,6 @@ document.getElementById('header').addEventListener('click', function() {
 
 document.getElementById('closeMenu').addEventListener('click', function() {
     overlay.classList.remove('show-menu');
+    header.classList.remove('hide-header');
 });
 
