@@ -96,7 +96,9 @@ h1 {
 }
 
 
+///
 // MENU
+///
 
 
 nav {
@@ -108,6 +110,7 @@ nav {
     transform: scaleX(0);
     transform-origin: right;
     display: none;
+}
 
 ul {
     list-style-type: none;
@@ -128,20 +131,35 @@ li {
 }
 
 a {
-    font-size: 1.8em;
+    font-size: 2.4em;
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    animation-name: pulse2;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse2 {
+    0% {
+        transform: scale(1);
     }
 
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 span {
-    color: lightgray;
+    color: gray;
     display: block;
     margin-top: 2em;
     font-family: 'h1Font';
     font-size: 1.7em;
-    }
-}
-
+ }
 
 .closeButton {
     width: 20px;
@@ -208,7 +226,9 @@ span {
 }
 
 
+//
 // BACKROUND ANIMATIONs
+//
 
 
 .background {
@@ -229,6 +249,9 @@ span {
 
 .clouds {
     background-image: url("../images/Clouds.png");
+    animation: slideClouds;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
     }
 
 .backMask {
@@ -280,6 +303,21 @@ span {
     background-image: url('../images/smallOrangeLight.png');
     animation: waving-orangelight 47s infinite;
     animation-delay: 4s;
+}
+
+@keyframes slideClouds {
+    0% {
+        right: 0;
+        transform: translateX(0);
+      }
+      50% {
+        right: 5%;
+        transform: translateX(-5%);
+      }
+      100% {
+        right: 0;
+        transform: translateX(0);
+      } 
 }
 
 
@@ -408,5 +446,3 @@ span {
         opacity: 0.4;
     }
 }
-
-

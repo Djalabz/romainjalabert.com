@@ -140,7 +140,7 @@ nav {
   display: none;
 }
 
-nav ul {
+ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
   padding: 0 1em 0 1em;
@@ -151,7 +151,7 @@ nav ul {
   width: 80%;
 }
 
-nav li {
+li {
   font-family: 'h1Font';
   opacity: 0;
   -webkit-animation: show-x;
@@ -161,14 +161,47 @@ nav li {
   line-height: 1.5;
 }
 
-nav a {
-  font-size: 1.8em;
+a {
+  font-size: 2.4em;
   color: white;
   text-decoration: none;
 }
 
-nav span {
-  color: lightgray;
+a:hover {
+  -webkit-animation-name: pulse2;
+          animation-name: pulse2;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+span {
+  color: gray;
   display: block;
   margin-top: 2em;
   font-family: 'h1Font';
@@ -297,6 +330,12 @@ nav span {
 
 .clouds {
   background-image: url("../images/Clouds.png");
+  -webkit-animation: slideClouds;
+          animation: slideClouds;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .backMask {
@@ -359,6 +398,42 @@ nav span {
           animation: waving-orangelight 47s infinite;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+}
+
+@-webkit-keyframes slideClouds {
+  0% {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    right: 5%;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideClouds {
+  0% {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    right: 5%;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @-webkit-keyframes waving-redlight {
