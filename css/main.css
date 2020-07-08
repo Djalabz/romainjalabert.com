@@ -75,31 +75,31 @@ h2 {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale(0.96);
-            transform: scale(0.96);
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
   }
   70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(0.96);
-            transform: scale(0.96);
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale(0.96);
-            transform: scale(0.96);
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
   }
   70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(0.96);
-            transform: scale(0.96);
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
   }
 }
 
@@ -187,17 +187,6 @@ a {
   font-size: 2.4em;
   color: white;
   text-decoration: none;
-}
-
-a:hover {
-  -webkit-animation-name: pulse2;
-          animation-name: pulse2;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes pulse2 {
