@@ -26,16 +26,10 @@ body {
   color: #F5F5F5;
   font-size: 2.7em;
   border: 0;
-  padding-top: 1.5em;
+  padding-top: 1em;
   margin-bottom: 0.3em;
   font-style: normal;
   font-variant: normal;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .header .subTitle {
@@ -61,12 +55,6 @@ body {
   font-size: 1.9em;
   margin: 0em;
   cursor: pointer;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .header .subTitle .menuSend {
@@ -175,14 +163,15 @@ nav {
 }
 
 ul {
+  text-align: center;
   list-style-type: none;
-  margin: 10% auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
-  width: 80%;
+  width: 42%;
 }
 
 li {
@@ -710,5 +699,193 @@ span {
   100% {
     opacity: 0.4;
   }
+}
+
+.menu {
+  padding-top: 0.5em;
+  font-family: 'h1Font';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.9em;
+  color: lightgrey;
+}
+
+.menu h2 {
+  cursor: pointer;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.work-overlay {
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  padding: 2em;
+  position: absolute;
+  background-color: darkblue;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  display: none;
+  color: lightgray;
+}
+
+.show-work {
+  display: block;
+  -webkit-animation: slide-menu 0.7s ease-in forwards;
+          animation: slide-menu 0.7s ease-in forwards;
+}
+
+.show-work .closeButton {
+  -webkit-animation: show-x 0.8s 0.6s forwards;
+          animation: show-x 0.8s 0.6s forwards;
+}
+
+.show-work p {
+  -webkit-animation: fadeIn 4.5s;
+          animation: fadeIn 4.5s;
+  color: lightgray;
+}
+
+.close-menu {
+  display: block;
+  -webkit-animation: slide-menu-out 0.6s ease-out forwards;
+          animation: slide-menu-out 0.6s ease-out forwards;
+}
+
+.close-menu p {
+  -webkit-animation: fadeOut 0.2s ease-out forwards;
+          animation: fadeOut 0.2s ease-out forwards;
+}
+
+.portfolio-overlay {
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  padding: 2em;
+  position: absolute;
+  background-color: darkblue;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  display: none;
+  color: lightgray;
+}
+
+.show-portfolio {
+  display: block;
+  -webkit-animation: slide-menu 0.7s ease-in forwards;
+          animation: slide-menu 0.7s ease-in forwards;
+}
+
+.show-portfolio .closeButton {
+  -webkit-animation: show-x 0.8s 0.6s forwards;
+          animation: show-x 0.8s 0.6s forwards;
+}
+
+.show-portfolio p {
+  -webkit-animation: fadeIn 4.5s;
+          animation: fadeIn 4.5s;
+  color: lightgray;
+}
+
+.close-menu {
+  display: block;
+  -webkit-animation: slide-menu-out 0.6s ease-out forwards;
+          animation: slide-menu-out 0.6s ease-out forwards;
+}
+
+.close-menu p {
+  -webkit-animation: fadeOut 0.2s ease-out forwards;
+          animation: fadeOut 0.2s ease-out forwards;
+}
+
+.about-overlay {
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  padding: 2em;
+  position: absolute;
+  background-color: darkblue;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  display: none;
+  color: lightgray;
+}
+
+.show-about {
+  display: block;
+  -webkit-animation: slide-menu 0.7s ease-in forwards;
+          animation: slide-menu 0.7s ease-in forwards;
+}
+
+.show-about .closeButton {
+  -webkit-animation: show-x 0.8s 0.6s forwards;
+          animation: show-x 0.8s 0.6s forwards;
+}
+
+.show-about p {
+  -webkit-animation: fadeIn 4.5s;
+          animation: fadeIn 4.5s;
+  color: lightgray;
+}
+
+.close-menu {
+  display: block;
+  -webkit-animation: slide-menu-out 0.6s ease-out forwards;
+          animation: slide-menu-out 0.6s ease-out forwards;
+}
+
+.close-menu p {
+  -webkit-animation: fadeOut 0.2s ease-out forwards;
+          animation: fadeOut 0.2s ease-out forwards;
+}
+
+.contact-overlay {
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  padding: 2em;
+  position: absolute;
+  background-color: darkblue;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  display: none;
+  color: lightgray;
+}
+
+.show-contact {
+  display: block;
+  -webkit-animation: slide-menu 0.7s ease-in forwards;
+          animation: slide-menu 0.7s ease-in forwards;
+}
+
+.show-contact .closeButton {
+  -webkit-animation: show-x 0.8s 0.6s forwards;
+          animation: show-x 0.8s 0.6s forwards;
+}
+
+.show-contact p {
+  -webkit-animation: fadeIn 4.5s;
+          animation: fadeIn 4.5s;
+  color: lightgray;
+}
+
+.close-menu {
+  display: block;
+  -webkit-animation: slide-menu-out 0.6s ease-out forwards;
+          animation: slide-menu-out 0.6s ease-out forwards;
+}
+
+.close-menu p {
+  -webkit-animation: fadeOut 0.2s ease-out forwards;
+          animation: fadeOut 0.2s ease-out forwards;
 }
 /*# sourceMappingURL=main.css.map */
