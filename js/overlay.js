@@ -14,5 +14,4 @@ document.getElementById('closeMenu').addEventListener('click', function() {
     header.classList.remove('hide-header');
 });
 
-
-
+// WORK
