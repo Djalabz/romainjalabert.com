@@ -99,6 +99,14 @@ h1 {
         animation-fill-mode: forwards;
 }
 
+.show-header {
+    animation: fadeIn;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
 
 ///
 // MENU
@@ -198,12 +206,30 @@ span {
     }
 }
 
+.close-menu {
+    display: block;
+    animation: slide-menu-out 0.5s ease-out forwards;
+
+
+}
+
+
 @keyframes slide-menu {
     from {
         transform: scaleX(0);
     }
     to {
         transform: scaleX(1);
+
+    }
+}
+
+@keyframes slide-menu-out {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
 
     }
 }

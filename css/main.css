@@ -126,6 +126,17 @@ body {
           animation-fill-mode: forwards;
 }
 
+.show-header {
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 nav {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -246,6 +257,12 @@ span {
           animation: menu-item-anim .6s forwards 1.6s ease-in-out;
 }
 
+.close-menu {
+  display: block;
+  -webkit-animation: slide-menu-out 0.5s ease-out forwards;
+          animation: slide-menu-out 0.5s ease-out forwards;
+}
+
 @-webkit-keyframes slide-menu {
   from {
     -webkit-transform: scaleX(0);
@@ -265,6 +282,28 @@ span {
   to {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes slide-menu-out {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes slide-menu-out {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
 }
 
