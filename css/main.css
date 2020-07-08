@@ -14,12 +14,7 @@ body {
   background-size: cover;
 }
 
-.header {
-  position: relative;
-  text-align: center;
-}
-
-.header h1 {
+h1 {
   font-family: 'h1Font';
   font-weight: 0;
   text-align: center;
@@ -30,6 +25,22 @@ body {
   margin-bottom: 0.3em;
   font-style: normal;
   font-variant: normal;
+}
+
+h2 {
+  font-family: 'h1Font';
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFEAB1;
+  font-size: 1.8em;
+  margin: 0em;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  text-align: center;
 }
 
 .header .subTitle {
@@ -44,17 +55,6 @@ body {
           align-items: center;
   margin: 0.5em;
   margin-top: 1em;
-}
-
-.header .subTitle h2 {
-  font-family: 'h1Font';
-  font-weight: 100;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #FFEAB1;
-  font-size: 1.9em;
-  margin: 0em;
-  cursor: pointer;
 }
 
 .header .subTitle .menuSend {
@@ -117,8 +117,8 @@ body {
 .show-header {
   -webkit-animation: fadeIn;
           animation: fadeIn;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -129,7 +129,7 @@ body {
   0% {
     opacity: 0;
   }
-  10% {
+  12% {
     opacity: 0;
   }
   100% {
@@ -141,7 +141,7 @@ body {
   0% {
     opacity: 0;
   }
-  10% {
+  12% {
     opacity: 0;
   }
   100% {
@@ -164,19 +164,18 @@ nav {
 
 ul {
   text-align: center;
-  list-style-type: none;
   margin: 0 auto 0 auto;
   padding: 0 1em 0 1em;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
-  width: 42%;
+  width: 43%;
 }
 
 li {
   font-family: 'h1Font';
-  opacity: 0;
   -webkit-animation: show-x;
           animation: show-x;
   text-align: center;
@@ -711,7 +710,7 @@ span {
   color: lightgrey;
 }
 
-.menu h2 {
+.menu li {
   cursor: pointer;
   -webkit-animation-name: pulse;
           animation-name: pulse;
@@ -726,7 +725,7 @@ span {
   height: calc(100vh - 4em);
   padding: 2em;
   position: absolute;
-  background-color: darkblue;
+  background-color: #151553;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -741,15 +740,25 @@ span {
           animation: slide-menu 0.7s ease-in forwards;
 }
 
+.show-work .container {
+  -webkit-animation: fadeIn 4.5s;
+          animation: fadeIn 4.5s;
+}
+
 .show-work .closeButton {
   -webkit-animation: show-x 0.8s 0.6s forwards;
           animation: show-x 0.8s 0.6s forwards;
 }
 
 .show-work p {
-  -webkit-animation: fadeIn 4.5s;
-          animation: fadeIn 4.5s;
   color: lightgray;
+  font-family: 'h1Font';
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.show-work h1 {
+  text-align: center;
 }
 
 .close-menu {
@@ -758,7 +767,7 @@ span {
           animation: slide-menu-out 0.6s ease-out forwards;
 }
 
-.close-menu p {
+.close-menu .container {
   -webkit-animation: fadeOut 0.2s ease-out forwards;
           animation: fadeOut 0.2s ease-out forwards;
 }
@@ -768,7 +777,7 @@ span {
   height: calc(100vh - 4em);
   padding: 2em;
   position: absolute;
-  background-color: darkblue;
+  background-color: #151553;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -788,7 +797,7 @@ span {
           animation: show-x 0.8s 0.6s forwards;
 }
 
-.show-portfolio p {
+.show-portfolio .container {
   -webkit-animation: fadeIn 4.5s;
           animation: fadeIn 4.5s;
   color: lightgray;
@@ -800,7 +809,7 @@ span {
           animation: slide-menu-out 0.6s ease-out forwards;
 }
 
-.close-menu p {
+.close-menu .container {
   -webkit-animation: fadeOut 0.2s ease-out forwards;
           animation: fadeOut 0.2s ease-out forwards;
 }
@@ -810,7 +819,7 @@ span {
   height: calc(100vh - 4em);
   padding: 2em;
   position: absolute;
-  background-color: darkblue;
+  background-color: #151553;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -830,7 +839,7 @@ span {
           animation: show-x 0.8s 0.6s forwards;
 }
 
-.show-about p {
+.show-about .container {
   -webkit-animation: fadeIn 4.5s;
           animation: fadeIn 4.5s;
   color: lightgray;
@@ -842,7 +851,7 @@ span {
           animation: slide-menu-out 0.6s ease-out forwards;
 }
 
-.close-menu p {
+.close-menu .container {
   -webkit-animation: fadeOut 0.2s ease-out forwards;
           animation: fadeOut 0.2s ease-out forwards;
 }
@@ -852,7 +861,7 @@ span {
   height: calc(100vh - 4em);
   padding: 2em;
   position: absolute;
-  background-color: darkblue;
+  background-color: #151553;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -872,7 +881,7 @@ span {
           animation: show-x 0.8s 0.6s forwards;
 }
 
-.show-contact p {
+.show-contact .container {
   -webkit-animation: fadeIn 4.5s;
           animation: fadeIn 4.5s;
   color: lightgray;
@@ -884,7 +893,7 @@ span {
           animation: slide-menu-out 0.6s ease-out forwards;
 }
 
-.close-menu p {
+.close-menu .container {
   -webkit-animation: fadeOut 0.2s ease-out forwards;
           animation: fadeOut 0.2s ease-out forwards;
 }
