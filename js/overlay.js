@@ -2,7 +2,7 @@
 
 var header = document.getElementById('header');
 var overlay = document.getElementById('overlay');
-var closeMenu = document.getElementById('closeMenu');
+var closeWork = document.getElementById('closeWork');
 var workOverlay = document.getElementById('workOverlay');
 var portfolioOverlay = document.getElementById('portfolioOverlay');
 var aboutOverlay = document.getElementById('aboutOverlay');
@@ -26,7 +26,7 @@ document.getElementById('work').addEventListener('click', function() {
     header.classList.remove('show-header');
 });
 
-document.getElementById('closeMenu').addEventListener('click', function() {
+document.getElementById('closeWork').addEventListener('click', function() {
     workOverlay.classList.remove('show-work');
     header.classList.remove('hide-header');
     header.classList.add('show-header');

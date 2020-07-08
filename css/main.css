@@ -761,6 +761,12 @@ span {
           animation: fadeOut 0.2s ease-out forwards;
 }
 
+.code-logo {
+  width: 8em;
+  height: 8em;
+  fill: lightgrey;
+}
+
 .portfolio-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
