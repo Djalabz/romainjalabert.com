@@ -169,6 +169,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
   width: 43%;
@@ -751,6 +754,7 @@ span {
 }
 
 .show-work p {
+  margin-top: 1em;
   color: lightgray;
   font-family: 'h1Font';
   text-align: center;
@@ -776,7 +780,7 @@ span {
   width: 8em;
   height: 8em;
   fill: lightgrey;
-  margin-bottom: 2em;
+  margin-bottom: 1.6em;
 }
 
 .design-logo {
