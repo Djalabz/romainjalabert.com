@@ -761,14 +761,14 @@ span {
 }
 
 .show-work .container {
-  -webkit-animation: fadeIn 3s;
-          animation: fadeIn 3s;
+  -webkit-animation: fadeIn 2.5s;
+          animation: fadeIn 2.5s;
 }
 
 .show-work .container ul {
   text-align: center;
   margin: 0 auto 0 auto;
-  padding: 5em 1em 0 1em;
+  padding: 4em 1em 0 1em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
@@ -777,7 +777,8 @@ span {
 }
 
 .show-work .container li {
-  background-color: #304b9b;
+  background-color: #151553;
+  opacity: 0.95;
   margin: 1em;
   padding: 1.9em 1.5em;
   border-radius: 2%;
@@ -818,6 +819,7 @@ span {
   height: 5em;
   fill: lightgrey;
   margin-bottom: 1.6em;
+  opacity: 0.9;
 }
 
 .design-logo {
@@ -825,6 +827,7 @@ span {
   height: 5em;
   fill: lightgrey;
   margin-bottom: 1.6em;
+  opacity: 0.9;
 }
 
 .paint-logo {
@@ -832,6 +835,7 @@ span {
   height: 5em;
   fill: lightgrey;
   margin-bottom: 1.6em;
+  opacity: 0.9;
 }
 
 .chess-logo {
@@ -839,6 +843,7 @@ span {
   height: 5em;
   fill: lightgrey;
   margin-bottom: 1.6em;
+  opacity: 0.9;
 }
 
 .portfolio-overlay {
@@ -964,5 +969,33 @@ span {
 .close-menu .container {
   -webkit-animation: fadeOut 0.2s ease-out forwards;
           animation: fadeOut 0.2s ease-out forwards;
+}
+
+.container-form {
+  margin-top: 5em;
+  margin-left: 6em;
+  display: -ms-grid;
+  display: grid;
+  width: 30%;
+}
+
+.container-form label {
+  margin-bottom: 0.5em;
+}
+
+.container-form input {
+  margin-bottom: 1em;
+}
+
+.container-form textarea {
+  margin-bottom: 1em;
+}
+
+.container-form #subject {
+  height: 1.6em;
+}
+
+.container-form #message {
+  height: 12em;
 }
 /*# sourceMappingURL=main.css.map */
