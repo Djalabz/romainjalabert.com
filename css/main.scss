@@ -94,7 +94,7 @@ h2 {
 }
 
 .hide-header {
-        animation: backOutLeft;
+        animation: backOutUp;
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -528,7 +528,9 @@ span {
 }
 
 
+
 // SHOW WORK
+
 
 
 
@@ -537,9 +539,9 @@ span {
     height: calc(100vh - 4em);
     padding: 2em;
     position: absolute;
-    background-color: #151553;
+    background-color: none;
     transform: scaleX(0);
-    transform-origin: right;
+    // transform-origin: right;
     display: none;
     color: lightgray;
 }
@@ -547,11 +549,10 @@ span {
 
 .show-work {
     display: block;
-    animation: slide-menu 0.7s ease-in forwards;
+    animation: pulse 0.7s ease-in forwards;
 
     .container {
-        animation: fadeIn 4.5s;
-        
+        animation: fadeIn 3s;       
 
     ul {
         text-align: center;
@@ -567,6 +568,8 @@ span {
         margin: 1em;
         padding: 1.9em 1.5em;
         border-radius: 2%;
+        border-color: lightgrey;
+        border: 3px;
     }
     
 }
@@ -590,10 +593,10 @@ span {
 
 .close-menu {
     display: block;
-    animation: slide-menu-out 0.6s ease-out forwards;
+    animation: fadeOut 1.6s ease-out forwards;
 
     .container {
-        animation: fadeOut 0.2s ease-out forwards
+        animation: fadeOut 1s ease-out forwards;
     }
 }
 
@@ -624,6 +627,8 @@ span {
     fill: lightgrey;
     margin-bottom: 1.6em;
 }
+
+
 
 // SHOW PORTFOLIO
 
@@ -669,6 +674,7 @@ span {
 // SHOW ABOUT
 
 
+
 .about-overlay {
     width: calc(100% - 4em);
     height: calc(100vh - 4em);
@@ -707,6 +713,8 @@ span {
 
 
 // SHOW CONTACT
+
+
 
 .contact-overlay {
     width: calc(100% - 4em);

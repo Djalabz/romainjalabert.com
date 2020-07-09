@@ -104,8 +104,8 @@ h2 {
 }
 
 .hide-header {
-  -webkit-animation: backOutLeft;
-          animation: backOutLeft;
+  -webkit-animation: backOutUp;
+          animation: backOutUp;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
@@ -747,24 +747,22 @@ span {
   height: calc(100vh - 4em);
   padding: 2em;
   position: absolute;
-  background-color: #151553;
+  background-color: none;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
   display: none;
   color: lightgray;
 }
 
 .show-work {
   display: block;
-  -webkit-animation: slide-menu 0.7s ease-in forwards;
-          animation: slide-menu 0.7s ease-in forwards;
+  -webkit-animation: pulse 0.7s ease-in forwards;
+          animation: pulse 0.7s ease-in forwards;
 }
 
 .show-work .container {
-  -webkit-animation: fadeIn 4.5s;
-          animation: fadeIn 4.5s;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
 }
 
 .show-work .container ul {
@@ -783,6 +781,8 @@ span {
   margin: 1em;
   padding: 1.9em 1.5em;
   border-radius: 2%;
+  border-color: lightgrey;
+  border: 3px;
 }
 
 .show-work .closeButton {
@@ -804,13 +804,13 @@ span {
 
 .close-menu {
   display: block;
-  -webkit-animation: slide-menu-out 0.6s ease-out forwards;
-          animation: slide-menu-out 0.6s ease-out forwards;
+  -webkit-animation: fadeOut 1.6s ease-out forwards;
+          animation: fadeOut 1.6s ease-out forwards;
 }
 
 .close-menu .container {
-  -webkit-animation: fadeOut 0.2s ease-out forwards;
-          animation: fadeOut 0.2s ease-out forwards;
+  -webkit-animation: fadeOut 1s ease-out forwards;
+          animation: fadeOut 1s ease-out forwards;
 }
 
 .code-logo {
