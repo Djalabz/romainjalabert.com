@@ -121,6 +121,23 @@ h2 {
 }
 
 
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+
+    12% {
+        opacity:0.5;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 ///
 // MENU
 ///
@@ -548,7 +565,7 @@ span {
     li {
         background-color: #304b9b;
         margin: 1em;
-        padding: 1.9em 1em;
+        padding: 1.9em 1.5em;
         border-radius: 2%;
     }
     
@@ -644,7 +661,7 @@ span {
     animation: slide-menu-out 0.6s ease-out forwards;
 
     .container {
-        animation: fadeOut 0.2s ease-out forwards
+        display: none;
     }
 }
 

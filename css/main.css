@@ -149,6 +149,36 @@ h2 {
   }
 }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 nav {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -751,7 +781,7 @@ span {
 .show-work .container li {
   background-color: #304b9b;
   margin: 1em;
-  padding: 1.9em 1em;
+  padding: 1.9em 1.5em;
   border-radius: 2%;
 }
 
@@ -849,8 +879,7 @@ span {
 }
 
 .close-menu .container {
-  -webkit-animation: fadeOut 0.2s ease-out forwards;
-          animation: fadeOut 0.2s ease-out forwards;
+  display: none;
 }
 
 .about-overlay {
