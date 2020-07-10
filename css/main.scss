@@ -126,11 +126,8 @@ h2 {
         opacity:1;
     }
 
-    12% {
-        opacity:0.5;
-    }
     30% {
-        opacity: 0;
+        opacity: 0.5;
     }
     100% {
         opacity: 0;
@@ -161,7 +158,7 @@ ul {
     display: flex;
     justify-content: center;
     grid-template-columns: repeat(4, 25%);
-    width: 43%;
+    width: 40%;
 }
 
 li {
@@ -561,7 +558,7 @@ span {
         display: grid;
         grid-template-columns: repeat(4, 25%);
         width: 90%;
-    }
+        }
 
     li {
         background-color: #151553;
@@ -571,9 +568,9 @@ span {
         border-radius: 2%;
         border-color: lightgrey;
         border: 3px;
-    }
+        }
     
-}
+    }
 
     .closeButton {
         animation: show-x 0.8s 0.6s forwards;
@@ -597,7 +594,7 @@ span {
     animation: fadeOut 1.6s ease-out forwards;
 
     .container {
-        animation: fadeOut 1s ease-out forwards;
+        animation: fadeOut 2s forwards;
     }
 }
 
@@ -685,7 +682,7 @@ span {
     height: calc(100vh - 4em);
     padding: 2em;
     position: absolute;
-    background-color: #151553;
+    background-color: none;
     transform: scaleX(0);
     transform-origin: right;
     display: none;
@@ -705,6 +702,10 @@ span {
         animation: fadeIn 4.5s;
         color: lightgray;
     }
+
+    .container-about {
+        background-color: #151553;
+    }
 }
 
 .close-menu {
@@ -715,6 +716,7 @@ span {
         animation: fadeOut 0.2s ease-out forwards
     }
 }
+
 
 
 // SHOW CONTACT
@@ -727,11 +729,15 @@ span {
     height: calc(100vh - 4em);
     padding: 2em;
     position: absolute;
-    background-color: #151553;
+    background-color: none;
     transform: scaleX(0);
     transform-origin: right;
     display: none;
     color: lightgray;
+
+    .container {
+        display: flex;
+    }
 }
 
 
@@ -744,8 +750,12 @@ span {
     }
 
     .container { 
-        animation: fadeIn 4.5s;
+        animation: fadeIn 3.5s;
         color: lightgray;
+    }
+
+    h1 {
+        animation: fadeIn 3s;
     }
 }
 
@@ -754,7 +764,11 @@ span {
     animation: slide-menu-out 0.6s ease-out forwards;
 
     .container {
-        animation: fadeOut 0.2s ease-out forwards
+        display: none;
+    }
+
+    h1 {
+        display: none;
     }
 }
 
@@ -784,3 +798,42 @@ span {
         height: 12em;
     }
 }
+
+.container-infos {
+    background-color: #151553;
+    border-radius: 2%;
+    width: 50%;
+    float: right;
+    margin-left: 3em;
+    margin-top: 5em;
+    
+    svg {
+        width: 3em;
+        height: 3em;
+        fill: lightgrey;
+    }
+
+    ul {
+
+        width: 80%;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 4em;
+    }
+
+    .social {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 4em;
+
+        svg {
+            margin: 0 2em;
+            width: 4em;
+            height: 4em;
+        }
+    }
+}
+
