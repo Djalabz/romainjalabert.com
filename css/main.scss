@@ -671,7 +671,9 @@ span {
 }
 
 
+
 // SHOW ABOUT
+
 
 
 
@@ -685,6 +687,18 @@ span {
     transform-origin: right;
     display: none;
     color: lightgray;
+
+        .container-about {
+            background-color: #151553;
+            margin-top: 5em;
+            margin-left: 6em;
+            width: 80%;
+            border-radius: 2%;
+        }
+
+        p {
+            padding: 1.5em;
+        }
 }
 
 
@@ -799,12 +813,14 @@ span {
     }
 
     .submit-button  {
+        font-family: 'h1Font';
+        font-size: 1.2em;;
         height: 2em;
         margin-top: 1em;
         background-color: #151553;
         color: lightgrey;
         border-radius: 5%;
-        cursor:pointer;
+        cursor: pointer;
         outline: none;
         text-align: center;
         height: auto;

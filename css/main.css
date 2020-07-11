@@ -875,6 +875,18 @@ span {
   color: lightgray;
 }
 
+.about-overlay .container-about {
+  background-color: #151553;
+  margin-top: 5em;
+  margin-left: 6em;
+  width: 80%;
+  border-radius: 2%;
+}
+
+.about-overlay p {
+  padding: 1.5em;
+}
+
 .show-about {
   display: block;
   -webkit-animation: slide-menu 0.7s ease-in forwards;
@@ -993,6 +1005,8 @@ span {
 }
 
 .container-form .submit-button {
+  font-family: 'h1Font';
+  font-size: 1.2em;
   height: 2em;
   margin-top: 1em;
   background-color: #151553;
