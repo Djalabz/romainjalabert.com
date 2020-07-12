@@ -587,10 +587,6 @@ li {
         text-align: center;
         font-size: 1.1em;
     }
-
-    h1 {
-        text-align: center;
-    }
 }
 
 .close-menu {
@@ -745,6 +741,11 @@ li {
     cursor: pointer;
     text-transform: uppercase;
     width: 20%
+    }
+
+    p:hover {
+        background-color: lightgrey;
+        color: #151553;
     }
 }
 
