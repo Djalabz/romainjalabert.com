@@ -9,7 +9,7 @@
   }
 
 body {
-    background-color: #1D2EC3;
+    background-color: #0c1aa3;
     font-weight: normal;
     // background-image: url('/images/SecondStars.png'), url('/images/PortfolioBack4.png');
     background-size: cover;
@@ -555,7 +555,7 @@ span {
         padding: 4em 1em 0 1em;
         display: grid;
         grid-template-columns: repeat(4, 25%);
-        width: 90%;
+        width: 95%;
         }
 
     li {
@@ -631,6 +631,7 @@ span {
 
 
 // SHOW PORTFOLIO
+
 
 
 
@@ -713,11 +714,16 @@ span {
     .container { 
         animation: fadeIn 4.5s;
         color: lightgray;
-    }
+    }   
+}
 
-    .container-about {
-        background-color: #151553;
-    }
+
+.cv-button {
+    text-align: center;
+    border-style: solid;
+    border-color: lightgrey;
+    border: 3em;
+    padding: 1em;
 }
 
 
@@ -728,6 +734,7 @@ span {
     .container {
         animation: fadeOut 0.2s ease-out forwards
     }
+
 }
 
 
@@ -816,7 +823,7 @@ span {
         font-family: 'h1Font';
         font-size: 1.2em;;
         height: 2em;
-        margin-top: 1em;
+        margin-top: 0.8em;
         background-color: #151553;
         color: lightgrey;
         border-radius: 5%;

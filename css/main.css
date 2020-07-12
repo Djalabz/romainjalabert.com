@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #1D2EC3;
+  background-color: #0c1aa3;
   font-weight: normal;
   background-size: cover;
 }
@@ -747,7 +747,7 @@ span {
   display: grid;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
-  width: 90%;
+  width: 95%;
 }
 
 .show-work .container li {
@@ -904,8 +904,12 @@ span {
   color: lightgray;
 }
 
-.show-about .container-about {
-  background-color: #151553;
+.cv-button {
+  text-align: center;
+  border-style: solid;
+  border-color: lightgrey;
+  border: 3em;
+  padding: 1em;
 }
 
 .close-menu {
@@ -1008,7 +1012,7 @@ span {
   font-family: 'h1Font';
   font-size: 1.2em;
   height: 2em;
-  margin-top: 1em;
+  margin-top: 0.8em;
   background-color: #151553;
   color: lightgrey;
   border-radius: 5%;
