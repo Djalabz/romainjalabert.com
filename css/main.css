@@ -170,30 +170,6 @@ nav {
   display: none;
 }
 
-ul {
-  text-align: center;
-  margin: 0 auto 0 auto;
-  padding: 0 1em 0 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
-  width: 40%;
-}
-
-li {
-  font-family: 'h1Font';
-  -webkit-animation: show-x;
-          animation: show-x;
-  text-align: center;
-  padding: 0 1em 0 1em;
-  line-height: 1.5;
-}
-
 a {
   font-size: 2.4em;
   color: white;
@@ -716,6 +692,30 @@ span {
           animation: pulse 1.7s ease-in-out infinite;
 }
 
+ul {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 0 1em 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  width: 40%;
+}
+
+li {
+  font-family: 'h1Font';
+  -webkit-animation: show-x;
+          animation: show-x;
+  text-align: center;
+  padding: 0 0.7em 0 0.7em;
+  line-height: 1.5;
+}
+
 .work-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -755,7 +755,7 @@ span {
   opacity: 0.95;
   margin: 1em;
   padding: 1.9em 1.5em;
-  border-radius: 2%;
+  border-radius: 7px;
   border-color: lightgrey;
   border: 3px;
 }
@@ -880,7 +880,7 @@ span {
   margin-top: 5em;
   margin-left: 6em;
   width: 80%;
-  border-radius: 2%;
+  border-radius: 5px;
 }
 
 .about-overlay p {
@@ -899,17 +899,36 @@ span {
 }
 
 .show-about .container {
-  -webkit-animation: fadeIn 4.5s;
-          animation: fadeIn 4.5s;
+  -webkit-animation: fadeIn 3.5s;
+          animation: fadeIn 3.5s;
   color: lightgray;
 }
 
 .cv-button {
-  text-align: center;
-  border-style: solid;
-  border-color: lightgrey;
   border: 3em;
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.cv-button p {
+  padding: 0.5em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px;
+  border-style: solid;
+  font-family: 'h1Font';
+  color: lightgrey;
+  background-color: #151553;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 20%;
 }
 
 .close-menu {
@@ -1015,7 +1034,7 @@ span {
   margin-top: 0.8em;
   background-color: #151553;
   color: lightgrey;
-  border-radius: 5%;
+  border-radius: 5px;
   cursor: pointer;
   outline: none;
   text-align: center;
