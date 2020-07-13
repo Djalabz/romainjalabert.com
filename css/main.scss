@@ -151,10 +151,6 @@ nav {
     display: none;
 }
 
-
-
-
-
 a {
     font-size: 2.4em;
     color: white;
@@ -256,7 +252,7 @@ span {
     }
     to {
         transform: translateY(0%);
-        opacity: 1;
+        opacity: 0.7;
     }
 }
 
@@ -631,7 +627,7 @@ li {
 }
 
 
-
+///
 // SHOW PORTFOLIO
 
 
@@ -649,7 +645,6 @@ li {
     color: lightgray;
 }
 
-
 .show-portfolio {
     display: block;
     animation: slide-menu 0.7s ease-in forwards;
@@ -658,9 +653,50 @@ li {
         animation: show-x 0.8s 0.6s forwards;
     }
 
-    .container { 
+    h1, h2 {
         animation: fadeIn 4.5s;
+    }
+
+    .container { 
         color: lightgray;
+    }
+
+    ul {
+        margin-top: 5em;
+    }
+
+    li {
+        opacity: 0;
+    }
+
+    li:nth-of-type(1) {
+        animation: menu-item-anim .6s forwards 1s ease-in-out;
+    }
+
+    li:nth-of-type(2) {
+        animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+    }
+
+    li:nth-of-type(3) {
+        animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+    }
+
+    li:nth-of-type(4) {
+        animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+    }
+
+    li:nth-of-type(5) {
+        animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+    }
+
+    .portfolio-container {
+
+        img {
+            width: 14em;
+            height: 14em;
+            border-radius: 6px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -675,6 +711,7 @@ li {
 
 
 
+///
 // SHOW ABOUT
 
 
@@ -699,6 +736,14 @@ li {
             border-radius: 5px;
         }
 
+        .half-face {
+            width: 9em;
+            height: 18em;
+            fill: black;
+            margin: 1em;
+            opacity: 0.5;
+        }
+
         p {
             padding: 1.5em;
         }
@@ -714,7 +759,7 @@ li {
     }
 
     .container { 
-        animation: fadeIn 3.5s;
+        animation: fadeIn 2.5s;
         color: lightgray;
     }   
 }
@@ -762,6 +807,7 @@ li {
 
 
 
+///
 // SHOW CONTACT
 
 

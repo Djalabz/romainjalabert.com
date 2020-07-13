@@ -322,7 +322,7 @@ span {
   to {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    opacity: 1;
+    opacity: 0.7;
   }
 }
 
@@ -335,7 +335,7 @@ span {
   to {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    opacity: 1;
+    opacity: 0.7;
   }
 }
 
@@ -841,10 +841,53 @@ li {
           animation: show-x 0.8s 0.6s forwards;
 }
 
-.show-portfolio .container {
+.show-portfolio h1, .show-portfolio h2 {
   -webkit-animation: fadeIn 4.5s;
           animation: fadeIn 4.5s;
+}
+
+.show-portfolio .container {
   color: lightgray;
+}
+
+.show-portfolio ul {
+  margin-top: 5em;
+}
+
+.show-portfolio li {
+  opacity: 0;
+}
+
+.show-portfolio li:nth-of-type(1) {
+  -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
+          animation: menu-item-anim .6s forwards 1s ease-in-out;
+}
+
+.show-portfolio li:nth-of-type(2) {
+  -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+}
+
+.show-portfolio li:nth-of-type(3) {
+  -webkit-animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+}
+
+.show-portfolio li:nth-of-type(4) {
+  -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+}
+
+.show-portfolio li:nth-of-type(5) {
+  -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+}
+
+.show-portfolio .portfolio-container img {
+  width: 14em;
+  height: 14em;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .close-menu {
@@ -879,6 +922,14 @@ li {
   border-radius: 5px;
 }
 
+.about-overlay .half-face {
+  width: 9em;
+  height: 18em;
+  fill: black;
+  margin: 1em;
+  opacity: 0.5;
+}
+
 .about-overlay p {
   padding: 1.5em;
 }
@@ -895,8 +946,8 @@ li {
 }
 
 .show-about .container {
-  -webkit-animation: fadeIn 3.5s;
-          animation: fadeIn 3.5s;
+  -webkit-animation: fadeIn 2.5s;
+          animation: fadeIn 2.5s;
   color: lightgray;
 }
 
