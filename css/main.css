@@ -851,7 +851,7 @@ li {
 }
 
 .show-portfolio ul {
-  margin-top: 5em;
+  margin-top: 7em;
 }
 
 .show-portfolio li {
@@ -1057,6 +1057,7 @@ li {
   display: grid;
   width: 30%;
   text-transform: uppercase;
+  font-family: 'h1Font';
 }
 
 .container-form label {
@@ -1116,7 +1117,7 @@ li {
 }
 
 .container-infos ul p {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .container-infos ul li {
