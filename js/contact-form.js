@@ -1,11 +1,16 @@
-$(document).ready(function () {
+
+// CONTACT FORM //
+
+
+
+document.getElementById('submit').addEventListener('click', function () {
     var user, to, subject, text;
-    $("#send_email").click(function () {
         // enter your email account that you want to recieve emails at.
-        to = "hello@sethbergman.com";
-        name = $("#name").val();
+        to = "romainjalabet.pro@gmail.com";
+        fname = $("#fname").val();
+        lname = $("#lname").val();
         user = $("#user_email").val();
-        text = $("#textarea1").val();
+        text = $("#message").val();
         // $("#message").text("Sending E-mail...Please wait");
         $.get("http://localhost:8080/send", {
             to: to,
@@ -18,4 +23,4 @@ $(document).ready(function () {
             }
         });
     });
-});
+;

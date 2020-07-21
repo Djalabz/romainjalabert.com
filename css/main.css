@@ -157,25 +157,6 @@ h2 {
   }
 }
 
-nav {
-  width: calc(100% - 4em);
-  height: calc(100vh - 4em);
-  padding: 2em;
-  position: absolute;
-  background-image: url("../images/backOverlay.png");
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  display: none;
-}
-
-a {
-  font-size: 2.4em;
-  color: white;
-  text-decoration: none;
-}
-
 @-webkit-keyframes pulse2 {
   0% {
     -webkit-transform: scale(0.9);
