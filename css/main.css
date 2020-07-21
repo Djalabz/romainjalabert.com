@@ -862,6 +862,7 @@ li {
 
 .show-portfolio li {
   opacity: 0;
+  padding: 0 1.2em;
 }
 
 .show-portfolio li:nth-of-type(1) {
@@ -890,8 +891,8 @@ li {
 }
 
 .show-portfolio .portfolio-container img {
-  width: 14em;
-  height: 14em;
+  width: 12em;
+  height: 12em;
   border-radius: 6px;
   cursor: pointer;
 }
