@@ -926,11 +926,14 @@ li {
   margin-left: 6em;
   width: 80%;
   border-radius: 5px;
+  text-align: center;
 }
 
 .about-overlay p {
-  padding: 2.5em;
+  padding: 1em 2.5em;
   font-family: 'h2Font';
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 
 .about-overlay p span {
@@ -940,6 +943,13 @@ li {
 .about-overlay p span:hover {
   color: white;
   text-decoration: underline;
+}
+
+.about-overlay .face {
+  width: 13em;
+  height: 13em;
+  margin: 2em 2em;
+  border-style: solid;
 }
 
 .show-about {
@@ -962,6 +972,7 @@ li {
 .cv-button {
   border: 3em;
   padding: 1em;
+  padding-bottom: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
