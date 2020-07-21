@@ -903,11 +903,18 @@ li {
 
 .about-overlay .container-about {
   background-color: #151553;
-  margin-top: 4em;
+  margin-top: 3.5em;
   margin-left: 6em;
   width: 80%;
   border-radius: 5px;
   text-align: center;
+}
+
+.about-overlay .container-about .about-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
 }
 
 .about-overlay a {
@@ -915,11 +922,12 @@ li {
 }
 
 .about-overlay p {
-  padding: 1em 2.5em;
+  padding: 0 2.5em 1em 0em;
   font-family: 'h2Font';
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
   line-height: 1.3;
+  text-align: left;
 }
 
 .about-overlay p span {
@@ -934,7 +942,7 @@ li {
 .about-overlay .face {
   width: 12em;
   height: 12em;
-  margin: 2em 2em;
+  margin: 2em 2em 1.5em;
   border-style: solid;
   opacity: 85%;
 }
@@ -958,8 +966,7 @@ li {
 
 .cv-button {
   border: 3em;
-  padding: 1em;
-  padding-bottom: 2em;
+  padding: 2em 0 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,6 +989,7 @@ li {
   cursor: pointer;
   text-transform: uppercase;
   width: 20%;
+  text-align: center;
 }
 
 .cv-button p:hover {
