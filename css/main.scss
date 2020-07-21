@@ -168,14 +168,6 @@ a {
     }
 }
 
-span {
-    color: lightgray;
-    display: block;
-    margin-top: 2em;
-    font-family: 'h1Font';
-    font-size: 1.7em;
- }
-
 .closeButton {
     width: 20px;
     float: right;
@@ -644,7 +636,7 @@ li {
     transform-origin: right;
     display: none;
     color: lightgray;
-    opacity: 0.97;
+    opacity: 1;
 }
 
 .show-portfolio {
@@ -749,18 +741,22 @@ li {
             margin-left: 6em;
             width: 80%;
             border-radius: 5px;
-        }
 
-        .half-face {
-            width: 9em;
-            height: 18em;
-            fill: black;
-            margin: 1em;
-            opacity: 0.5;
         }
 
         p {
-            padding: 1.5em;
+            padding: 2.5em;
+            font-family: 'h2Font';
+
+        span {
+             cursor: pointer;
+             }
+        
+        span:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
         }
 }
 
@@ -778,7 +774,6 @@ li {
         color: lightgray;
     }   
 }
-
 
 .cv-button {
     border: 3em;

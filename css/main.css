@@ -198,14 +198,6 @@ a {
   }
 }
 
-span {
-  color: lightgray;
-  display: block;
-  margin-top: 2em;
-  font-family: 'h1Font';
-  font-size: 1.7em;
-}
-
 .closeButton {
   width: 20px;
   float: right;
@@ -828,7 +820,7 @@ li {
           transform-origin: right;
   display: none;
   color: lightgray;
-  opacity: 0.97;
+  opacity: 1;
 }
 
 .show-portfolio {
@@ -936,16 +928,18 @@ li {
   border-radius: 5px;
 }
 
-.about-overlay .half-face {
-  width: 9em;
-  height: 18em;
-  fill: black;
-  margin: 1em;
-  opacity: 0.5;
+.about-overlay p {
+  padding: 2.5em;
+  font-family: 'h2Font';
 }
 
-.about-overlay p {
-  padding: 1.5em;
+.about-overlay p span {
+  cursor: pointer;
+}
+
+.about-overlay p span:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .show-about {
