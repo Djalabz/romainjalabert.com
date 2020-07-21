@@ -737,11 +737,15 @@ li {
 
         .container-about {
             background-color: #151553;
-            margin-top: 5em;
+            margin-top: 4em;
             margin-left: 6em;
             width: 80%;
             border-radius: 5px;
             text-align: center;
+        }
+
+        a {
+            text-decoration: none;
         }
 
         p {
@@ -749,6 +753,7 @@ li {
             font-family: 'h2Font';
             font-size: 1.2em;
             text-transform: uppercase;
+            line-height: 1.3;
 
         span {
              cursor: pointer;
@@ -758,15 +763,17 @@ li {
             color: white;
             text-decoration: underline;
         }
-        }
+    }
 
         .face {
-            width: 13em;
-            height: 13em;
+            width: 12em;
+            height: 12em;
             margin: 2em 2em;
             border-style: solid;
+            opacity: 85%;
         }
 }
+
 
 
 .show-about {
