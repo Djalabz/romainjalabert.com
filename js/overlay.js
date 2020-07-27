@@ -5,8 +5,10 @@ var overlay = document.getElementById('overlay');
 var closeWork = document.getElementById('closeWork');
 var workOverlay = document.getElementById('workOverlay');
 var portfolioOverlay = document.getElementById('portfolioOverlay');
-var portfolioItem = document.getElementById('portfolio-item hka');
+
 var aboutOverlay = document.getElementById('aboutOverlay');
+
+var items = ['hka', 'midionze', 'castaway', 'street'];
 
 // document.getElementById('header').addEventListener('click', function() {
 //     overlay.classList.add('show-menu');
@@ -55,23 +57,20 @@ document.getElementById('closeFolio').addEventListener('click', function() {
 
 // PORTFOLIO ITEMS
 
-var items = ['hka', 'midionze', 'castaway', 'street'];
-
-console.log(items)
 
 items.forEach((item) => 
 document.getElementById(item+'-button').addEventListener('click', function() {  
-    portfolioItem.classList.add('show-portfolio-item');
+    document.getElementById('portfolio-item '+item).classList.add('show-portfolio-item');
     header.classList.add('hide-header');
     header.classList.remove('show-header');
 }),)
 
-// document.getElementById('close-'+item).addEventListener('click', function() {
-//     console.log('close')
-//     portfolioItem.classList.remove('show-portfolio-item');
-//     header.classList.add('hide-header');
-//     header.classList.remove('show-header');
-// }),)
+items.forEach((item) => 
+document.getElementById('close-'+item).addEventListener('click', function() {
+    document.getElementById('portfolio-item '+item).classList.remove('show-portfolio-item');
+     header.classList.add('hide-header');
+     header.classList.remove('show-header');
+ }),)
 
 
 
