@@ -9,7 +9,7 @@
   }
 
 body {
-    background-color: #0c1aa3;
+    background-color: #151553;
     font-weight: normal;
     // background-image: url('/images/SecondStars.png'), url('/images/PortfolioBack4.png');
     background-size: cover;
@@ -625,18 +625,19 @@ li {
 
 
 
-
 .portfolio-overlay {
     width: calc(100% - 4em);
     height: calc(100vh - 4em);
     padding: 2em;
     position: absolute;
     background-color: #151553;
+    background-repeat: repeat-y;
     transform: scaleX(0);
     transform-origin: right;
     display: none;
     color: lightgray;
     opacity: 1;
+    height: auto;
 }
 
 .show-portfolio {
@@ -650,6 +651,10 @@ li {
     h1, h2 {
         animation: fadeIn 4.5s;
         opacity: 1;
+    }
+
+    h1 {
+        padding-top: 0.4em;
     }
 
     h2 {
@@ -690,6 +695,7 @@ li {
     }
 
     .portfolio-container {
+        padding-bottom: 0em;
 
         img {
             width: 12em;
@@ -710,6 +716,7 @@ li {
 .close-menu {
     display: block;
     animation: slide-menu-out 0.6s ease-out forwards;
+    height: 100%;
 
     .container {
         display: none;
@@ -734,10 +741,28 @@ li {
     padding: 2em;
     position: absolute;
     background-color: #151553;
+    height: 100%;
+    background-repeat: repeat-y;
     display: block;
 
     .closeButton {
         opacity: 1;
+    }
+
+    li {
+        color: lightgray;
+        text-align: left;
+        font-size: 1.5em;
+        margin: 1em 0;
+    }
+
+    h1 {
+        padding-top: 0.5em;
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: inline;
     }
 }
 
