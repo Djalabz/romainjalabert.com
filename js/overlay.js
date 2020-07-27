@@ -5,6 +5,7 @@ var overlay = document.getElementById('overlay');
 var closeWork = document.getElementById('closeWork');
 var workOverlay = document.getElementById('workOverlay');
 var portfolioOverlay = document.getElementById('portfolioOverlay');
+var portfolioItem = document.getElementById('portfolio-item hka');
 var aboutOverlay = document.getElementById('aboutOverlay');
 
 // document.getElementById('header').addEventListener('click', function() {
@@ -49,6 +50,25 @@ document.getElementById('closeFolio').addEventListener('click', function() {
     header.classList.remove('hide-header');
     header.classList.add('show-header');
     portfolioOverlay.classList.add('close-menu');
+});
+
+
+// PORTFOLIO ITEMS
+
+
+
+document.getElementById('hka-button').addEventListener('click', function() {
+    console.log('portoflioItem')
+    portfolioItem.classList.add('show-portfolio-item');
+    header.classList.add('hide-header');
+    header.classList.remove('show-header');
+});
+
+document.getElementById('close-hka').addEventListener('click', function() {
+    console.log('close')
+    portfolioItem.classList.remove('show-portfolio-item');
+    header.classList.add('hide-header');
+    header.classList.remove('show-header');
 });
 
 
