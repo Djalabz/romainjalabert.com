@@ -55,21 +55,25 @@ document.getElementById('closeFolio').addEventListener('click', function() {
 
 // PORTFOLIO ITEMS
 
+var items = ['hka', 'midionze', 'castaway', 'street'];
 
+console.log(items)
 
-document.getElementById('hka-button').addEventListener('click', function() {
-    console.log('portoflioItem')
+items.forEach((item) => 
+document.getElementById(item+'-button').addEventListener('click', function() {  
     portfolioItem.classList.add('show-portfolio-item');
     header.classList.add('hide-header');
     header.classList.remove('show-header');
-});
+}),)
 
-document.getElementById('close-hka').addEventListener('click', function() {
-    console.log('close')
-    portfolioItem.classList.remove('show-portfolio-item');
-    header.classList.add('hide-header');
-    header.classList.remove('show-header');
-});
+// document.getElementById('close-'+item).addEventListener('click', function() {
+//     console.log('close')
+//     portfolioItem.classList.remove('show-portfolio-item');
+//     header.classList.add('hide-header');
+//     header.classList.remove('show-header');
+// }),)
+
+
 
 
 // ABOUT SECTION
