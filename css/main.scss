@@ -732,10 +732,6 @@ li {
 
 
 .portfolio-item {
-    display: none;
-}
-
-.show-portfolio-item {
     width: calc(100% - 4em);
     height: calc(100vh - 4em);
     padding: 2em;
@@ -743,6 +739,11 @@ li {
     background-color: #151553;
     height: 100%;
     background-repeat: repeat-y;
+    padding-bottom: 10em;
+    display: none;
+}
+
+.show-portfolio-item {
     display: block;
 
     .closeButton {
@@ -762,7 +763,49 @@ li {
     }
 
     ul {
-        display: inline;
+        display: block;
+        width: 40%;
+        margin: 2em 0;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .hka-image {
+        width: 20em;
+        height: 27em;
+        margin-top: 2em;
+    }
+
+    .item-container {
+        padding-top: 2em;
+        display: flex;
+    }
+
+    .items-links {
+        display: flex;
+    }
+
+    .item-button {
+        padding-right: 1em;
+        margin-top: 0;
+        p {
+            font-size: 0.9em;
+            width: 100%;
+            padding: 0.3em 0.5em;
+        }
     }
 }
 
@@ -849,15 +892,13 @@ li {
     }   
 }
 
-.cv-button {
-    border: 3em;
-    padding: 2em 0 3em;
+.cv-button, .item-button {
+    padding: 1em 0 3em;
     display: flex;
     justify-content: center;
     text-align: center;
 
     p {
-    
     padding: 0.5em;
     font-size: 1.2em;
     border-radius: 5px;
