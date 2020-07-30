@@ -6,6 +6,7 @@ var closeWork = document.getElementById('closeWork');
 var workOverlay = document.getElementById('workOverlay');
 var portfolioOverlay = document.getElementById('portfolioOverlay');
 var portfolioButton= document.getElementById('portfolio-button');
+var contactOverlay = document.getElementById('contactOverlay');
 
 var aboutOverlay = document.getElementById('aboutOverlay');
 
@@ -86,7 +87,6 @@ document.getElementById('close-'+item).addEventListener('click', function() {
      header.classList.remove('show-header');
  }),)
 
-
 items.forEach((item) => 
 document.getElementById('portfolio-button '+item).addEventListener('click', function() {
     document.getElementById('portfolio-item '+item).classList.remove('show-portfolio-item');
@@ -97,7 +97,7 @@ document.getElementById('contact-button '+item).addEventListener('click', functi
     document.getElementById('portfolio-item '+item).classList.remove('show-portfolio-item');
     portfolioOverlay.classList.remove('show-portfolio');
     contactOverlay.classList.add('show-contact');
-
+    contactOverlay.classList.remove('close-menu');
 }),)
 
 items.forEach((item) => 
