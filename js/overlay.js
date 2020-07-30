@@ -5,6 +5,7 @@ var overlay = document.getElementById('overlay');
 var closeWork = document.getElementById('closeWork');
 var workOverlay = document.getElementById('workOverlay');
 var portfolioOverlay = document.getElementById('portfolioOverlay');
+var portfolioButton= document.getElementById('portfolio-button');
 
 var aboutOverlay = document.getElementById('aboutOverlay');
 
@@ -16,6 +17,19 @@ var items = ['hka', 'midionze', 'castaway', 'street'];
 //     overlay.classList.remove('close-menu');
 //     header.classList.remove('show-header');
 // });
+
+
+// LOADING PAGE (JQUERY)
+
+
+$(document).ready(function() {
+    // PAGE IS FULLY LOADED  
+    // FADE OUT YOUR OVERLAYING DIV
+    setTimeout(() => {
+        $('#loading-overlay').fadeOut('fast');
+        console.log('loaded');
+    }, 3000);
+ });
 
 
 // WORK SECTION
@@ -73,6 +87,23 @@ document.getElementById('close-'+item).addEventListener('click', function() {
  }),)
 
 
+items.forEach((item) => 
+document.getElementById('portfolio-button '+item).addEventListener('click', function() {
+    document.getElementById('portfolio-item '+item).classList.remove('show-portfolio-item');
+}),)
+
+items.forEach((item) => 
+document.getElementById('contact-button '+item).addEventListener('click', function() {
+    document.getElementById('portfolio-item '+item).classList.remove('show-portfolio-item');
+    portfolioOverlay.classList.remove('show-portfolio');
+    contactOverlay.classList.add('show-contact');
+
+}),)
+
+items.forEach((item) => 
+document.getElementById('home-button '+item).addEventListener('click', function() {
+    window.location.reload();
+}),)
 
 
 // ABOUT SECTION

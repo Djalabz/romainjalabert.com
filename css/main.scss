@@ -8,6 +8,26 @@
     src: url(/assets/insolata.ttf);
   }
 
+
+
+// LOADING //
+
+
+.loading {
+    width: calc(100% - 4em);
+    height: 100%;
+    padding: 2em;
+    position: absolute;
+    background-color: #151553;
+    background-size: cover;
+    display: block;
+    color: lightgray;
+    opacity: 1;
+    height: 100%;
+}
+
+
+
 body {
     background-color: #151553;
     font-weight: normal;
