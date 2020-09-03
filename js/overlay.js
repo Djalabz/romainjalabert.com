@@ -23,14 +23,14 @@ var items = ['hka', 'midionze', 'castaway', 'street'];
 // LOADING PAGE (JQUERY)
 
 
-$(document).ready(function() {
-    // PAGE IS FULLY LOADED  
-    // FADE OUT YOUR OVERLAYING DIV
-    setTimeout(() => {
-        $('#loading-overlay').fadeOut('fast');
-        console.log('loaded');
-    }, 3000);
- });
+// $(document).ready(function() {
+//     // PAGE IS FULLY LOADED  
+//     // FADE OUT YOUR OVERLAYING DIV
+//     setTimeout(() => {
+//         $('#loading-overlay').fadeOut('fast');
+//         console.log('loaded');
+//     }, 3000);
+//  });
 
 
 // WORK SECTION
