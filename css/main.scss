@@ -788,10 +788,11 @@ li {
     padding: 2em;
     position: absolute;
     background-color: #151553;
-    height: 100%;
     background-repeat: repeat-y;
     padding-bottom: 10em;
     display: none;
+    // height: 100%;
+    // width: 100%;
 }
 
 .show-portfolio-item {
@@ -838,6 +839,12 @@ li {
         width: 20em;
         height: 27em;
         margin-top: 2em;
+    }
+
+    .street-image {
+        width: 42em;
+        height: 27em;
+        margin-top: 4em;
     }
 
     .item-container {
