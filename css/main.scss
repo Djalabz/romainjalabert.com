@@ -789,9 +789,10 @@ li {
     position: absolute;
     background-color: #151553;
     background-repeat: repeat-y;
+    background-size: cover;
     padding-bottom: 10em;
     display: none;
-    // height: 100%;
+    height: 100%;
     // width: 100%;
 }
 
@@ -836,15 +837,29 @@ li {
     }
 
     .hka-image {
-        width: 20em;
+        width: 38em;
         height: 27em;
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
     .street-image {
         width: 42em;
         height: 27em;
         margin-top: 4em;
+    }
+
+    .castaway-image {
+        width: 30em;
+        height: 30em;
+        margin-top: 4em;
+        margin-left: 5em;
+    }
+
+    .midionze-image {
+        width: 30em;
+        height: 26em;
+        margin-top: 4em;
+        margin-left: 3em;
     }
 
     .item-container {
