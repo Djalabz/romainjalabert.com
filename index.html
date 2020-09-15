@@ -215,7 +215,7 @@
             <ul>
                 <li><span>Context :</span></br> I was asked by a French real estate company specialized in responsible projects and environment friendly initiatives to build a coproprate Wordpress.</li>
                 <li><span>Skills :</span></br> Wordpress // CSS // Javascript //</li>
-                <li><span>Website : www.hkafinance.com</span></br> <a href="http://www.hkafinance.com" target="blank">www.hkafinance.com</a></li>
+                <li><span>Website :</span></br> <a href="http://www.hkafinance.com" target="blank">www.hkafinance.com</a></li>
                 <li class='items-links'>
                     <div class='item-button' id='portfolio-button hka'><p>PORTFOLIO</p></div>
                     <div class='item-button' id='contact-button hka'><p>CONTACT</p></div>
@@ -333,7 +333,11 @@
         <h1>CONTACT</h1>
         <h2></h2>
         <div class="container">
-            <div class="container-form">
+
+            <!-- <div class="container-form"> -->
+
+            <form action="#" method='POST' class='container-form' onsubmit="submitEmailForm(this)" >
+
             <label for="fname">First Name : </label>
             <input type="text" id="fname" name="firstname" placeholder="">
 
@@ -349,13 +353,15 @@
             <label for="message">Message :</label>
             <textarea id="message" name="message" placeholder=""></textarea>
 
-            <div id='submit' class='submit-button'>
+            <button id='submit' class='submit-button' type='submit' >
                 <p>SEND MESSAGE</p>
-            </div>
+            </button>
+
+            </form>
 
             <div class="statusForm"></div>
 
-            </div>
+        
             <div class='container-infos'>
             <ul>
             <li>
@@ -462,14 +468,15 @@
             
     </div>
 
-    
+
 
 <!-- SCRIPTS -->
 
 
 
 <script type='text/javascript' src="./js/overlay.js"></script>
-
+<script type='text/javascript' src="./js/contact-form.js"></script>
+<script type='text/javascript' src="./app.js"></script>
 
 
 <!-- SLICK -->
@@ -477,9 +484,9 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
 
-<script type='text/javascript' src="./js/slick.js"></script>
+
+
 
 
 
