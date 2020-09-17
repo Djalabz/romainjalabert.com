@@ -1,16 +1,16 @@
-const express = require("express");
+var express = require("express");
 const path = require("path");
 const nodemailer = require("nodemailer");
 var cors = require('cors');
 
 require('dotenv');
 
-const app = express();
+var app = express();
 
 app.use(cors({
     allowedHeaders: 'Content-Type,Authorization,X-Access-Token',
     credentials: true,
-    origin: true
+    origin: true,
   }));
 
 
@@ -30,15 +30,13 @@ app.use(log);
 // end custom middleware
 
 
-
-
 // enable static files pointing to the folder "public"
 // this can be used to serve the index.html file
 // app.use(express.static(path.join(__dirname, "public")));
 
 
 // HTTP POST
-app.post("#", function(request, response) {
+app.post("#", cors(), function(request, response) {
   // create reusable transporter object using the default SMTP transport
 	const transporter = nodemailer.createTransport({
 		host: "smtp.gmail.com",
@@ -46,7 +44,7 @@ app.post("#", function(request, response) {
 		secure: true,
 		auth: {
 			user: process.env.EMAIL,
-            pass: process.env.PASSWORD 
+            pass: process.env.PASSWORD, 
 		}
 	});
 
@@ -73,7 +71,7 @@ app.post("#", function(request, response) {
 });
 
 
-// set port from environment variable, or 8000
+// set port from environment variable
 const PORT = process.env.PORT || 5500;
 
 app.listen(PORT, () => console.log(`listening on port ${PORT}`));

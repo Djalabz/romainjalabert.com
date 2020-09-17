@@ -4,20 +4,21 @@
 http://www.prowaretech.com/Computer/JavaScript/NodejsContactForm
 
 function submitEmailForm(form) {
-    const obj = new XMLHttpRequest();
-    obj.onreadystatechange = function(){
-        if(obj.readyState == 4){
-            if(obj.status == 200){
-                var res = JSON.parse(obj.responseText);
+    console.log('function working');
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4) {
+            if(xhr.status == 200) {
+                var res = JSON.parse(xhr.responseText);
                 alert(res.message);
             }
             else{
-                alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+                alert("XMLHttp status " + xhr.status + ": " + xhr.statusText);
             }
         }
     };
-    obj.open("post", form.action, true);
-    obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
-    obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+    xhr.open("post", form.action, true);
+    xhr.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+    xhr.send(JSON.stringify({ firstname: form.firstname.value, lastname: form.lastname.value, email: form.email.value, message: form.message.value }));
     return false;
 }

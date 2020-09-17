@@ -8,22 +8,6 @@
   src: url(/assets/insolata.ttf);
 }
 
-#loading-overlay {
-  width: 100%;
-  height: 100%;
-  padding: 2em;
-  position: absolute;
-  background-color: #151553;
-  background-size: 100% 100%;
-  display: block;
-  color: lightgray;
-  opacity: 1;
-}
-
-#loading-overlay div {
-  background-color: #151553;
-}
-
 body {
   background-color: #151553;
   font-weight: normal;
@@ -52,6 +36,38 @@ h2 {
   font-size: 1.8em;
   margin: 0em;
   text-align: center;
+}
+
+@media (max-width: 990px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  li {
+    font-size: 0.8em;
+    padding: 0em 0.4em;
+  }
+  .menu {
+    padding-top: 0.2em;
+  }
+}
+
+@media (max-width: 670px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  li {
+    font-size: 0.8em;
+    padding: 0em 0.4em;
+  }
+  .menu {
+    padding-top: 0.2em;
+  }
 }
 
 .header {
@@ -667,7 +683,7 @@ h2 {
 }
 
 .menu {
-  padding-top: 0.5em;
+  padding-top: 0.3em;
   font-family: 'h1Font';
   font-weight: 400;
   font-style: normal;
@@ -702,14 +718,14 @@ li {
   -webkit-animation: show-x;
           animation: show-x;
   text-align: center;
-  padding: 0 0.7em 0 0.7em;
+  padding: 0 0.6em 0 0.6em;
   line-height: 1.5;
 }
 
 .work-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
-  padding: 2em;
+  padding: 1.6em;
   position: absolute;
   background-color: none;
   -webkit-transform: scaleX(0);
@@ -1028,7 +1044,7 @@ li {
 .about-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
-  padding: 2em;
+  padding: 1.3em;
   position: absolute;
   background-color: none;
   -webkit-transform: scaleX(0);
@@ -1240,10 +1256,12 @@ li {
   color: lightgrey;
   border-radius: 5px;
   cursor: pointer;
-  outline: none;
+  outline: none !important;
   text-align: center;
   height: auto;
   padding: 0.8em 0;
+  -webkit-box-shadow: none  !important;
+          box-shadow: none  !important;
 }
 
 .container-infos {
