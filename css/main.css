@@ -1167,6 +1167,19 @@ li {
           animation: fadeOut 0.2s ease-out forwards;
 }
 
+@media (max-width: 700px) {
+  .about-overlay .container-about {
+    margin-left: 3em;
+  }
+  .about-overlay .container-about .about-main {
+    display: block;
+  }
+  .about-overlay .container-about .about-description {
+    margin-left: 1em;
+    font-size: 0.8em;
+  }
+}
+
 .contact-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);

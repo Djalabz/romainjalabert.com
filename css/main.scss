@@ -1017,6 +1017,20 @@ li {
 
 }
 
+@media (max-width: 700px) {
+   
+    .about-overlay {
+        .container-about {
+            margin-left: 3em;
+    .about-main {
+        display: block;
+    }
+
+    .about-description {
+        margin-left: 1em;
+        font-size: 0.8em;
+    }
+}}}
 
 
 ///
