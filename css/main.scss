@@ -521,6 +521,86 @@ h2 {
 }
 
 
+@media (max-width: 769px) {
+
+    .background {
+        top:0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    .back_no_light {
+        background-image: url("../images/PortfolioBack4_nolights_ipad.png");
+        }
+    
+    .clouds {
+            background-image: url("../images/CloudsIpad.png");
+            background-repeat: repeat-x;
+            animation: slideClouds;
+            animation-duration: 43s;
+            animation-iteration-count: infinite;
+            }
+    
+ 
+    .backMask {
+        background-image: url("../images/backMaskipad.png");
+        display: none;
+        }    
+    
+    .deepSky {
+        background-image:  url("../images/deepSky.png");
+        animation: waving-stars  2s ease-in-out infinite;
+    }
+    
+    .stars{
+        background-image:  url("../images/SecondStarsIpad.png");
+        animation: waving-stars  6s ease-in-out infinite;
+        }
+    
+    .light_1 {
+        background-image: url("../images/2YellowLightsIpad.png");
+        animation: waving-light 41s infinite;
+        }
+    
+    .light_2 {
+        background-image: url("../images/YellowLightIpad.png");
+        animation: waving-light 32s infinite;
+        animation-delay: 15s;
+        }
+    
+    .light_3 {
+        background-image: url("../images/redLightIpad.png");
+        animation: waving-redlight  4s ease-in-out infinite;
+        }
+    
+    .reverb {
+        background-image: url("../images/reverberes.png");
+        animation: waving-reverb  1s ease-in-out infinite;
+    }
+    
+    .orangeLight {
+        display: none;
+        background-image: url("../images/orangeLight.png");
+        animation: waving-light  55s infinite;
+    }
+    
+    .downLeftLight {
+        background-image: url('../images/downLeftLight.png');
+        animation: waving-orangelight 47s infinite;
+    }
+    
+    .smallOrangeLight {
+        background-image: url('../images/smallOrangeLight.png');
+        animation: waving-orangelight 47s infinite;
+        animation-delay: 4s;
+    }
+
+}
+
 
 // MENU 2
 
