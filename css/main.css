@@ -922,6 +922,7 @@ li {
   color: lightgray;
   opacity: 1;
   height: 100%;
+  background-size: cover;
 }
 
 .show-portfolio {
@@ -1020,6 +1021,29 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 420px) {
+  ul {
+    display: block;
+  }
+  .show-portfolio h1 {
+    font-size: 1.7em;
+  }
+  .portfolio-container ul {
+    margin: 3em 3em;
+    display: initial;
+  }
+  .portfolio-container li {
+    padding: 2em 1em;
+  }
+  .closeButton {
+    width: 13px;
+    float: right;
+    cursor: pointer;
+    margin: 0.2em;
+    opacity: 0;
+  }
 }
 
 .portfolio-item {
