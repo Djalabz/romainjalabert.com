@@ -19,7 +19,7 @@ h1 {
   font-weight: 0;
   text-align: center;
   color: #F5F5F5;
-  font-size: 2.7em;
+  font-size: 2.4em;
   border: 0;
   padding-top: 1em;
   margin-bottom: 0.3em;
@@ -683,15 +683,6 @@ h2 {
 }
 
 @media (max-width: 769px) {
-  .background {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
   .back_no_light {
     background-image: url("../images/PortfolioBack4_nolights_ipad.png");
   }
@@ -737,27 +728,25 @@ h2 {
             animation: waving-redlight  4s ease-in-out infinite;
   }
   .reverb {
-    background-image: url("../images/reverberes.png");
-    -webkit-animation: waving-reverb  1s ease-in-out infinite;
-            animation: waving-reverb  1s ease-in-out infinite;
+    background-image: none;
   }
   .orangeLight {
+    background-image: none;
     display: none;
-    background-image: url("../images/orangeLight.png");
-    -webkit-animation: waving-light  55s infinite;
-            animation: waving-light  55s infinite;
+    -webkit-animation: none;
+            animation: none;
   }
   .downLeftLight {
-    background-image: url("../images/downLeftLight.png");
-    -webkit-animation: waving-orangelight 47s infinite;
-            animation: waving-orangelight 47s infinite;
+    background-image: none;
+    display: none;
+    -webkit-animation: none;
+            animation: none;
   }
   .smallOrangeLight {
-    background-image: url("../images/smallOrangeLight.png");
-    -webkit-animation: waving-orangelight 47s infinite;
-            animation: waving-orangelight 47s infinite;
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
+    background-image: none;
+    display: none;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -903,7 +892,10 @@ li {
 
 @media (max-width: 650px) {
   .show-work .container ul {
-    display: block;
+    display: initial;
+  }
+  .show-work .container li {
+    margin: 2em 1em;
   }
 }
 
@@ -1023,7 +1015,7 @@ li {
   display: flex;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   ul {
     display: block;
   }
@@ -1280,6 +1272,10 @@ li {
   .about-overlay .container-about .about-description {
     margin-left: 1em;
     font-size: 0.8em;
+  }
+  .about-overlay .face {
+    width: 7em;
+    height: 7em;
   }
 }
 
