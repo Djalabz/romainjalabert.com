@@ -1274,8 +1274,9 @@ li {
     font-size: 0.8em;
   }
   .about-overlay .face {
-    width: 7em;
-    height: 7em;
+    width: 9em;
+    height: 9em;
+    margin: 0em 2em 2em;
   }
 }
 
