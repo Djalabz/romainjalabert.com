@@ -682,7 +682,7 @@ h2 {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 770px) {
   .back_no_light {
     background-image: url("../images/PortfolioBack4_nolights_ipad.png");
   }
@@ -890,12 +890,21 @@ li {
   opacity: 0.9;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 770px) {
+  .work-overlay {
+    padding: 0em 1.6em;
+  }
   .show-work .container ul {
     display: initial;
   }
   .show-work .container li {
     margin: 2em 1em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .show-work .container .closeButton {
+    margin: 8px;
   }
 }
 
