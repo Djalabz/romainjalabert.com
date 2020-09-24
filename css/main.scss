@@ -887,6 +887,27 @@ li {
         opacity: 0;  
     }
 
+    .portfolio-overlay {
+        height: 500%;
+    }
+
+}
+
+@media (max-width: 920px) {
+    .portfolio-container {
+        ul {
+            display: initial;
+            margin: 3em;
+        }
+
+        li {
+            padding: 2em 1em;
+        }
+    }
+
+    .portfolio-overlay {
+        height: 500%;
+    }
 }
 
 
@@ -998,7 +1019,7 @@ li {
     }
 }
 
-
+// @media (max-width: )
 
 
 
@@ -1329,4 +1350,22 @@ li {
         }
     }
  }
+}
+
+@media (max-width: 530px) {
+    .contact-overlay {
+        .container {
+            display: block;
+        }
+    }
+
+    .container-form {
+        width: 60%;
+    }
+
+    .container-infos {
+        width: 60%;
+        margin-left: 6em;
+        float: initial;
+    }
 }
