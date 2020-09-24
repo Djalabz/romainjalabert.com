@@ -1189,15 +1189,22 @@ li {
 @media (max-width: 770px) {
   .show-portfolio-item .item-container {
     display: block;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .show-portfolio-item .hka-image {
     margin-top: 0em;
   }
+  .show-portfolio-item .midionze-image {
+    width: 25em;
+    height: 23em;
+    margin-top: 0em;
+    margin-left: 0em;
+  }
   .show-portfolio-item li {
     color: lightgray;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 1em 0;
   }
   .show-portfolio-item ul {
@@ -1206,7 +1213,7 @@ li {
     margin: 2em auto 0em auto;
   }
   .show-portfolio-item .gallery {
-    text-align: center;
+    margin-left: 4em;
   }
 }
 
@@ -1338,7 +1345,7 @@ li {
     display: block;
   }
   .about-overlay .container-about .about-description {
-    margin-left: 1em;
+    margin-left: 2em;
     font-size: 0.8em;
   }
   .about-overlay .face {
