@@ -1554,10 +1554,10 @@ li {
     display: block;
   }
   .container-form {
-    width: 60%;
+    width: 80%;
   }
   .container-infos {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     float: initial;
