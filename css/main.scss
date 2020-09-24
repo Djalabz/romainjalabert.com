@@ -67,7 +67,7 @@ h2 {
     // animation-iteration-count: infinite;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1150px) {
     h1 {
         font-size: 2em;
     }
@@ -1212,7 +1212,9 @@ li {
    
     .about-overlay {
         .container-about {
-            margin-left: 3em;
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
     .about-main {
         display: block;
     }
@@ -1230,6 +1232,7 @@ li {
         }
     
 }}
+
 
 
 ///
