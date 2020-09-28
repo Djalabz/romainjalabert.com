@@ -3,7 +3,11 @@ const path = require("path");
 const nodemailer = require("nodemailer");
 var cors = require('cors');
 
-require('dotenv');
+var dotenv = require('dotenv');
+dotenv.config();
+
+console.log('hello');
+
 
 var app = express();
 
@@ -34,12 +38,14 @@ app.use(log);
 // this can be used to serve the index.html file
 // app.use(express.static(path.join(__dirname, "public")));
 
-
 // HTTP POST
-app.post("#", cors(), function(request, response) {
+app.post('/postInfo', function(request, response) {
+	console.log('post');
+
   // create reusable transporter object using the default SMTP transport
 	const transporter = nodemailer.createTransport({
 		host: "smtp.gmail.com",
+		service: 'gmail',
 		port: 465,
 		secure: true,
 		auth: {
@@ -72,6 +78,6 @@ app.post("#", cors(), function(request, response) {
 
 
 // set port from environment variable
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => console.log(`listening on port ${PORT}`));

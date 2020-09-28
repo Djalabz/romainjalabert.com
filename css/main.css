@@ -894,12 +894,15 @@ li {
   .work-overlay {
     padding: 0em 1.6em;
   }
+  .show-work .container h2 {
+    margin-bottom: 1em;
+  }
   .show-work .container ul {
     display: initial;
   }
   .show-work .container li {
     margin: 2em 1em;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1226,6 +1229,33 @@ li {
   }
 }
 
+@media (max-width: 540px) {
+  .show-portfolio-item .hka-image {
+    width: 20em;
+    height: 14em;
+  }
+  .show-portfolio-item .street-image {
+    width: 42em;
+    height: 27em;
+    margin-top: 4em;
+  }
+  .show-portfolio-item .castaway-image {
+    width: 30em;
+    height: 30em;
+    margin-top: 4em;
+    margin-left: 5em;
+  }
+  .show-portfolio-item .midionze-image {
+    width: 30em;
+    height: 26em;
+    margin-top: 4em;
+    margin-left: 3em;
+  }
+  .show-portfolio-item .gallery {
+    margin-left: 1.5em;
+  }
+}
+
 .about-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -1358,6 +1388,10 @@ li {
   .about-overlay .container-about .about-description {
     margin-left: 2em;
     font-size: 0.8em;
+  }
+  .about-overlay .container-about .cv-button p {
+    font-size: 1em;
+    width: 40%;
   }
   .about-overlay .face {
     width: 9em;
