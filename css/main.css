@@ -682,7 +682,7 @@ h2 {
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1025px) {
   .back_no_light {
     background-image: url("../images/PortfolioBack4_nolights_ipad.png");
   }
