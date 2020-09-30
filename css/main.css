@@ -1177,24 +1177,23 @@ li {
   .show-portfolio-item .hka-image {
     width: 26em;
     height: 18em;
-    margin-top: 3em;
   }
   .show-portfolio-item .street-image {
     width: 42em;
     height: 27em;
-    margin-top: 4em;
+    margin-top: 1em;
   }
   .show-portfolio-item .castaway-image {
     width: 30em;
     height: 30em;
-    margin-top: 4em;
-    margin-left: 5em;
   }
   .show-portfolio-item .midionze-image {
     width: 30em;
     height: 26em;
-    margin-top: 4em;
-    margin-left: 3em;
+  }
+  .show-portfolio-item img {
+    margin-top: 2em;
+    margin-left: 1em;
   }
 }
 
@@ -1222,10 +1221,14 @@ li {
   .show-portfolio-item ul {
     display: block;
     width: 80%;
-    margin: 2em auto 0em auto;
+    padding: 0em;
   }
   .show-portfolio-item .gallery {
-    margin-left: 4em;
+    margin-left: 0em;
+  }
+  .show-portfolio-item img {
+    margin-top: 2em;
+    margin-left: 1em;
   }
 }
 
@@ -1235,24 +1238,44 @@ li {
     height: 14em;
   }
   .show-portfolio-item .street-image {
-    width: 42em;
-    height: 27em;
-    margin-top: 4em;
+    width: 20em;
+    height: 14em;
   }
   .show-portfolio-item .castaway-image {
-    width: 30em;
-    height: 30em;
-    margin-top: 4em;
-    margin-left: 5em;
+    width: 20em;
+    height: 20em;
+    margin-left: 0em;
+    margin-top: 1em;
   }
   .show-portfolio-item .midionze-image {
-    width: 30em;
-    height: 26em;
-    margin-top: 4em;
-    margin-left: 3em;
+    width: 20em;
+    height: 17em;
   }
   .show-portfolio-item .gallery {
-    margin-left: 1.5em;
+    margin-left: 0em;
+  }
+  .show-portfolio-item img {
+    margin-top: 1em;
+    margin-left: 0em;
+  }
+  .show-portfolio-item ul {
+    margin: 2em 0em 0em;
+  }
+}
+
+@media (max-width: 351px) {
+  .gallery {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .show-portfolio-item .items-links {
+    display: block;
+  }
+  .show-portfolio-item .item-button {
+    padding: 1em 0em;
+    margin: 0em;
   }
 }
 
