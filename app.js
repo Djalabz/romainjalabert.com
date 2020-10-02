@@ -2,11 +2,12 @@ var express = require("express");
 const path = require("path");
 const nodemailer = require("nodemailer");
 var cors = require('cors');
+const TypedError = require('errorHandler');
 
 var dotenv = require('dotenv');
 dotenv.config();
 
-console.log('hello');
+
 
 
 var app = express();
@@ -34,9 +35,40 @@ app.use(log);
 // end custom middleware
 
 
-// enable static files pointing to the folder "public"
-// this can be used to serve the index.html file
-// app.use(express.static(path.join(__dirname, "public")));
+
+exports.contact = function (req, res, next) {
+    const { firstname, lastname, email, message } = req.body;
+
+    req.checkBody('email', 'email is required').notEmpty();
+    req.checkBody('firstname', 'firstname is required').notEmpty();
+    req.checkBody('lastname', 'lastname is required').notEmpty();
+    req.checkBody('message', 'message is required').notEmpty();
+
+    let missingFieldErrors = req.validationErrors()
+    if (missingFieldErrors) {
+      let err = new TypedError('contact error', 400, 'missing_field', {
+        message: 'Missing Fields !',
+        errors: missingFieldErrors,
+      })
+      return next(err);
+    }
+
+    req.checkBody('email', 'invalid email').isEmail();
+
+    let invalidFieldErrors = req.validationErrors()
+    
+    if (invalidFieldErrors) {
+        let err = new TypedError('contact error', 400, 'invalid_field', {
+        message: 'Email invalide !',
+        errors: invalidFieldErrors,
+        })
+        return next(err);
+	}
+}
+
+
+
+
 
 // HTTP POST
 app.post('/postInfo', function(request, response) {
@@ -74,7 +106,7 @@ app.post('/postInfo', function(request, response) {
 			response.json({ message: `message sent: ${info.messageId}` });
 		}
 	});
-});
+}); 
 
 
 // set port from environment variable
