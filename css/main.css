@@ -915,6 +915,16 @@ li {
   display: none;
 }
 
+.item-button-work {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+.item-button-work:hover {
+  text-decoration: underline;
+}
+
 .portfolio-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);

@@ -57,6 +57,7 @@ document.getElementById('portfolio-button-work').addEventListener('click', funct
     header.classList.add('hide-header');
     portfolioOverlay.classList.remove('close-menu');
     header.classList.remove('show-header');
+    workOverlay.classList.add('hide-work');
 });
 
 
