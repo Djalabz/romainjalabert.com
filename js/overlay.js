@@ -42,6 +42,7 @@ document.getElementById('work').addEventListener('click', function() {
     header.classList.add('hide-header');
     workOverlay.classList.remove('close-menu');
     header.classList.remove('show-header');
+    workOverlay.classList.remove('hide-work');
 });
 
 document.getElementById('closeWork').addEventListener('click', function() {
@@ -49,6 +50,13 @@ document.getElementById('closeWork').addEventListener('click', function() {
     header.classList.remove('hide-header');
     header.classList.add('show-header');
     workOverlay.classList.add('close-menu');
+});
+
+document.getElementById('portfolio-button-work').addEventListener('click', function() {
+    portfolioOverlay.classList.add('show-portfolio');
+    header.classList.add('hide-header');
+    portfolioOverlay.classList.remove('close-menu');
+    header.classList.remove('show-header');
 });
 
 
@@ -67,6 +75,7 @@ document.getElementById('closeFolio').addEventListener('click', function() {
     header.classList.remove('hide-header');
     header.classList.add('show-header');
     portfolioOverlay.classList.add('close-menu');
+    workOverlay.classList.add('hide-work');
 });
 
 

@@ -911,6 +911,10 @@ li {
   }
 }
 
+.hide-work {
+  display: none;
+}
+
 .portfolio-overlay {
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
