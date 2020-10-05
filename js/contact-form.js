@@ -15,7 +15,7 @@ function submitEmailForm(form) {
             }
         }
     };
-    xhr.open("post", 'http://127.0.0.1:8000/postInfo', form.action);
+    xhr.open("post", 'http://www.romainjalabert.com/postInfo', form.action);
     xhr.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
     xhr.send(JSON.stringify({ firstname: form.firstname.value, lastname: form.lastname.value, email: form.email.value, message: form.message.value }));
     return false;
