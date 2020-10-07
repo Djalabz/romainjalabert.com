@@ -71,7 +71,7 @@ exports.contact = function (req, res, next) {
 
 
 // HTTP POST
-app.post('/postInfo', function(request, response) {
+app.post('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', function(request, response) {
 	console.log('post');
 
   // create reusable transporter object using the default SMTP transport

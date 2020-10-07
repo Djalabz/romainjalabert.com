@@ -760,7 +760,19 @@ li {
     }
 }}
 
+.hide-work {
+    display: none;
+}
 
+.item-button-work {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.item-button-work:hover {
+    text-decoration: underline;
+}
 
 ///
 // SHOW PORTFOLIO
@@ -1033,6 +1045,10 @@ li {
             padding: 0.3em 0.5em;
         }
     }
+}
+
+#street-adress {
+    cursor: pointer;
 }
 
 @media (max-width: 930px) {
