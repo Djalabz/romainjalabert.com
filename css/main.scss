@@ -520,9 +520,9 @@ h2 {
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1023px) and (orientation: landscape) {
     .back_no_light {
-        background-image: url("../images/PortfolioBack4_nolights_ipad.png");
+            background-image: url("../images/PortfolioBack4_nolights_ipad.png");
     }
     
     .clouds {
@@ -760,7 +760,19 @@ li {
     }
 }}
 
+.hide-work {
+    display: none;
+}
 
+.item-button-work {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.item-button-work:hover {
+    text-decoration: underline;
+}
 
 ///
 // SHOW PORTFOLIO
@@ -1033,6 +1045,14 @@ li {
             padding: 0.3em 0.5em;
         }
     }
+
+    img {
+        border-radius: 7px;
+    }
+}
+
+#street-adress {
+    cursor: pointer;
 }
 
 @media (max-width: 930px) {
@@ -1135,6 +1155,7 @@ li {
             width: 20em;
             height: 17em;
         }
+
         .gallery {
             margin-left: 0em;
         }
@@ -1168,6 +1189,49 @@ li {
         margin: 0em; 
     }
 }
+}
+
+@media (min-width: 1500px) {
+    .portfolio-item {
+        height: 150%;
+    }
+
+    .show-portfolio-item {
+        .gallery {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0em;
+        }
+
+        .item-container {
+            display: block;
+        }
+
+        ul {
+            margin: 2em auto 0em auto;
+        }
+
+        .hka-image {
+            margin-left: 0em;
+            margin-top: 0em;
+        }
+    
+        .street-image {
+            margin-left: 0em;
+            margin-top: 0em;
+        }
+    
+        .castaway-image {
+            margin-left: 0em;
+            margin-top: 0em;
+        }
+    
+        .midionze-image {
+            margin-left: 0em;
+            margin-top: 0em;
+        }
+    }
 }
 
 
