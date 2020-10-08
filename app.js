@@ -71,7 +71,7 @@ exports.contact = function (req, res, next) {
 
 
 // HTTP POST
-app.post('/postInfo', function(request, response) {
+app.post('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', function(request, response) {
 	console.log('post');
 
   // create reusable transporter object using the default SMTP transport
@@ -89,8 +89,8 @@ app.post('/postInfo', function(request, response) {
 	var textBody = `FROM: ${request.body.firstname} + ${request.body.lastname} EMAIL: ${request.body.email} MESSAGE: ${request.body.message}`;
 	var htmlBody = `<h2>Mail From Contact Form</h2><p>from: ${request.body.firstname} + ${request.body.lastname}  <a href="mailto:${request.body.email}">${request.body.email}</a></p><p>${request.body.message}</p>`;
 	var mail = {
-		from: "romainjalabert.pro@gmail.com", // sender address
-		to: "romainjalabert.pro@gmail.com", // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
+		from: request.body.email, // sender address
+		to: process.env.EMAIL, // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
 		subject: "Mail From Contact Form", // Subject line
 		text: textBody,
 		html: htmlBody

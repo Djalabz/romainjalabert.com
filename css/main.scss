@@ -764,11 +764,14 @@ li {
     display: none;
 }
 
+
+
 .item-button-work {
     font-size: 1.2em;
     margin-top: 0.5em;
     cursor: pointer;
 }
+
 
 .item-button-work:hover {
     text-decoration: underline;
@@ -1049,6 +1052,10 @@ li {
     img {
         border-radius: 7px;
     }
+}
+
+#street-adress {
+    cursor: pointer;
 }
 
 #street-adress {
