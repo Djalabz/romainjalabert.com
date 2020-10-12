@@ -161,6 +161,10 @@ h2 {
         animation-fill-mode: forwards;
 }
 
+.hide-header-full {
+    display: none;
+}
+
 .show-header {
     animation: fadeIn;
     animation-duration: 2s;
@@ -606,7 +610,6 @@ h2 {
         cursor: pointer;
         animation: pulse 1.7s ease-in-out infinite;
     }
-
 }
 
 ul {
@@ -1600,4 +1603,67 @@ li {
         display: none;
     }
 
+}
+
+
+
+
+// FOOTER
+
+
+
+.footer-overlay {
+    padding: 2em;
+    position: absolute;
+    background-color: #151553;
+    background-repeat: repeat-y;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    display: none;
+    color: lightgray;
+    opacity: 1;
+    height: 100%;
+    background-size: cover;
+
+    .footer-container {
+        background-color: #151553;
+        border-radius: 2%;
+        width: 90%;
+        margin: 0em auto;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+
+.show-footer {
+    display: block;
+    animation: slideInUp 0.7s ease-in forwards;
+
+    .closeButton {
+        opacity: 1;
+    }
+}
+
+
+.footer {
+    position: absolute;
+    display: flex;
+    color: lightgrey;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+
+    ul {
+        align-items: flex-end;
+        margin: 0em;
+        width: 100%;
+        justify-content: flex-end;
+
+        li {
+            cursor: pointer;
+        }
+    }
 }

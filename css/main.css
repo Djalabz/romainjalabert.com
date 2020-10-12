@@ -130,6 +130,10 @@ h2 {
           animation-fill-mode: forwards;
 }
 
+.hide-header-full {
+  display: none;
+}
+
 .show-header {
   -webkit-animation: fadeIn;
           animation: fadeIn;
@@ -1691,5 +1695,71 @@ li {
   .my-mail {
     display: none;
   }
+}
+
+.footer-overlay {
+  padding: 2em;
+  position: absolute;
+  background-color: #151553;
+  background-repeat: repeat-y;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  display: none;
+  color: lightgray;
+  opacity: 1;
+  height: 100%;
+  background-size: cover;
+}
+
+.footer-overlay .footer-container {
+  background-color: #151553;
+  border-radius: 2%;
+  width: 90%;
+  margin: 0em auto;
+}
+
+.footer-overlay .header {
+  display: none;
+}
+
+.show-footer {
+  display: block;
+  -webkit-animation: slideInUp 0.7s ease-in forwards;
+          animation: slideInUp 0.7s ease-in forwards;
+}
+
+.show-footer .closeButton {
+  opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: lightgrey;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer ul {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0em;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer ul li {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

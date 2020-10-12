@@ -7,6 +7,7 @@ var workOverlay = document.getElementById('workOverlay');
 var portfolioOverlay = document.getElementById('portfolioOverlay');
 var portfolioButton= document.getElementById('portfolio-button');
 var contactOverlay = document.getElementById('contactOverlay');
+var footerOverlay = document.getElementById('footerOverlay')
 
 var aboutOverlay = document.getElementById('aboutOverlay');
 
@@ -153,4 +154,33 @@ document.getElementById('closeContact').addEventListener('click', function() {
 });
 
 
-// STREET EMBROUILLE
+// FOOTER 
+
+
+document.getElementById('terms').addEventListener('click', function() {
+    footerOverlay.classList.add('show-footer');
+    header.classList.add('hide-header-full');
+    footerOverlay.classList.remove('close-menu');
+    header.classList.remove('show-header');
+});
+
+document.getElementById('policy').addEventListener('click', function() {
+    footerOverlay.classList.add('show-footer');
+    header.classList.add('hide-header-full');
+    footerOverlay.classList.remove('close-menu');
+    header.classList.remove('show-header');
+});
+
+document.getElementById('closeFooter').addEventListener('click', function() {
+    footerOverlay.classList.remove('show-footer');
+    header.classList.remove('hide-header-full');
+    header.classList.add('show-header');
+    footerOverlay.classList.add('close-menu');
+});
+
+// document.getElementById('closeContact').addEventListener('click', function() {
+//     contactOverlay.classList.remove('show-contact');
+//     header.classList.remove('hide-header');
+//     header.classList.add('show-header');
+//     contactOverlay.classList.add('close-menu');
+// });
