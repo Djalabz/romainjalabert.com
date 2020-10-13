@@ -1450,6 +1450,7 @@ li {
     width: 30%;
     text-transform: uppercase;
     font-family: 'h1Font';
+    display: none;
 
     label {
         margin-bottom: 0.5em;
@@ -1489,12 +1490,15 @@ li {
 }
 
 .container-infos {
+    text-align: center;
     background-color: #151553;
-    border-radius: 2%;
-    width: 50%;
-    float: right;
-    margin-left: 2em;
+    border-radius: 12px;
+    width: 70%;
+    margin-left: auto;
     margin-top: 5em;
+    padding-bottom: 6em;
+    margin-bottom: 3em;
+    margin-right: auto;
     
     svg {
         width: 3em;
@@ -1649,7 +1653,7 @@ li {
 
 
 .footer {
-    position: absolute;
+    position: fixed;
     display: flex;
     color: lightgrey;
     flex-direction: row;
