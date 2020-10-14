@@ -1660,6 +1660,7 @@ li {
     display: -ms-grid;
     display: grid;
     width: 100%;
+    display: none;
   }
   .container-infos {
     margin-bottom: auto;
@@ -1685,6 +1686,7 @@ li {
   }
   .container-form {
     width: 80%;
+    display: none;
   }
   .container-infos {
     width: 80%;
