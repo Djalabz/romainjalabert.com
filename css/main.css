@@ -379,25 +379,25 @@ h2 {
 }
 
 .deepSky {
-  background-image: url("../images/deepSky.png");
+  background-image: url("../images/deepSky.webp");
   -webkit-animation: waving-stars  2s ease-in-out infinite;
           animation: waving-stars  2s ease-in-out infinite;
 }
 
 .stars {
-  background-image: url("../images/SecondStars.png");
+  background-image: url("../images/SecondStars.webp");
   -webkit-animation: waving-stars  6s ease-in-out infinite;
           animation: waving-stars  6s ease-in-out infinite;
 }
 
 .light_1 {
-  background-image: url("../images/2YellowLights.png");
+  background-image: url("../images/2YellowLights.webp");
   -webkit-animation: waving-light 41s infinite;
           animation: waving-light 41s infinite;
 }
 
 .light_2 {
-  background-image: url("../images/YellowLight+.png");
+  background-image: url("../images/YellowLight+.webp");
   -webkit-animation: waving-light 32s infinite;
           animation: waving-light 32s infinite;
   -webkit-animation-delay: 15s;
@@ -405,31 +405,31 @@ h2 {
 }
 
 .light_3 {
-  background-image: url("../images/redLight.png");
+  background-image: url("../images/redLight.webp");
   -webkit-animation: waving-redlight  4s ease-in-out infinite;
           animation: waving-redlight  4s ease-in-out infinite;
 }
 
 .reverb {
-  background-image: url("../images/reverberes.png");
+  background-image: url("../images/reverberes.webp");
   -webkit-animation: waving-reverb  1s ease-in-out infinite;
           animation: waving-reverb  1s ease-in-out infinite;
 }
 
 .orangeLight {
-  background-image: url("../images/orangeLight.png");
+  background-image: url("../images/orangeLight.webp");
   -webkit-animation: waving-light  55s infinite;
           animation: waving-light  55s infinite;
 }
 
 .downLeftLight {
-  background-image: url("../images/downLeftLight.png");
+  background-image: url("../images/downLeftLight.webp");
   -webkit-animation: waving-orangelight 47s infinite;
           animation: waving-orangelight 47s infinite;
 }
 
 .smallOrangeLight {
-  background-image: url("../images/smallOrangeLight.png");
+  background-image: url("../images/smallOrangeLight.webp");
   -webkit-animation: waving-orangelight 47s infinite;
           animation: waving-orangelight 47s infinite;
   -webkit-animation-delay: 4s;

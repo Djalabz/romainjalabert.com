@@ -330,48 +330,48 @@ h2 {
     }    
 
 .deepSky {
-    background-image:  url("../images/deepSky.png");
+    background-image:  url("../images/deepSky.webp");
     animation: waving-stars  2s ease-in-out infinite;
 }
 
 .stars{
-    background-image:  url("../images/SecondStars.png");
+    background-image:  url("../images/SecondStars.webp");
     animation: waving-stars  6s ease-in-out infinite;
     }
 
 .light_1 {
-    background-image: url("../images/2YellowLights.png");
+    background-image: url("../images/2YellowLights.webp");
     animation: waving-light 41s infinite;
     }
 
 .light_2 {
-    background-image: url("../images/YellowLight+.png");
+    background-image: url("../images/YellowLight+.webp");
     animation: waving-light 32s infinite;
     animation-delay: 15s;
     }
 
 .light_3 {
-    background-image: url("../images/redLight.png");
+    background-image: url("../images/redLight.webp");
     animation: waving-redlight  4s ease-in-out infinite;
     }
 
 .reverb {
-    background-image: url("../images/reverberes.png");
+    background-image: url("../images/reverberes.webp");
     animation: waving-reverb  1s ease-in-out infinite;
 }
 
 .orangeLight {
-    background-image: url("../images/orangeLight.png");
+    background-image: url("../images/orangeLight.webp");
     animation: waving-light  55s infinite;
 }
 
 .downLeftLight {
-    background-image: url('../images/downLeftLight.png');
+    background-image: url('../images/downLeftLight.webp');
     animation: waving-orangelight 47s infinite;
 }
 
 .smallOrangeLight {
-    background-image: url('../images/smallOrangeLight.png');
+    background-image: url('../images/smallOrangeLight.webp');
     animation: waving-orangelight 47s infinite;
     animation-delay: 4s;
 }
