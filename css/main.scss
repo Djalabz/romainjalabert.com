@@ -1619,6 +1619,7 @@ li {
 
 
 .footer-overlay {
+    width: 100%;
     padding: 2em;
     position: absolute;
     background-color: #151553;
@@ -1628,14 +1629,13 @@ li {
     display: none;
     color: lightgray;
     opacity: 1;
-    height: 300%;
     background-size: cover;
 
     .footer-container {
         background-color: #151553;
         border-radius: 2%;
         width: 90%;
-        margin: 0em auto;
+        margin: 0em 2em;
     }
 
     .header {
@@ -1672,4 +1672,8 @@ li {
             cursor: pointer;
         }
     }
+}
+
+pre {
+    margin-top: 3em;
 }
